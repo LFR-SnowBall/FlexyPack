@@ -1,31 +1,26 @@
 import 'package:flutter/material.dart';
-import 'package:flexypack/src/widgets/drawer.dart';
-class HomeScreen extends StatefulWidget{
+
+class ShoppingCart extends StatefulWidget{
   @override
   State<StatefulWidget> createState() {
     // TODO: implement createState
-    return _HomeScreenState();
+    return _ShoppingCartState();
   }
-
+  
 }
 
-class _HomeScreenState extends State<HomeScreen>{
-  Drawere _drawere = new Drawere();
+class _ShoppingCartState extends State<ShoppingCart>{
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
     return Scaffold(
-      backgroundColor: Colors.white,
-      drawer: _drawere.drawer(context),
       appBar: AppBar(
         backgroundColor: Colors.green,
         title: Image.asset('assets/images/logo.png',width: 200.0,height: 50.0,),
         centerTitle: true,
       ),
-      body: Center(
-        child: Image.asset('assets/images/logo.png',width: 300.0,height: 200.0,),
-      )
+      body: Text('Shopping Cart'),
     );
   }
-
+  
 }

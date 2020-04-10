@@ -3,6 +3,7 @@ import 'package:flexypack/src/market/ui/screens/home.dart';
 import 'package:flexypack/src/market/ui/screens/garrafon.dart';
 import 'package:flexypack/src/market/ui/screens/shoppingcart.dart';
 
+//se definen la rutas que seguira cada boton o acción en una clase rutas con el import de la misma
 
 class Router{
   static Route<dynamic> generateRoute(RouteSettings settings){

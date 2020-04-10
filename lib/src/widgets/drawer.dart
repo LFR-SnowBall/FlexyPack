@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 
 //barra lateral derecha menu hamburguesa
+// se crea un widget local para las screen del market que 
+//contiene los botones en lista del menu derecho con sus etiquetas y rutas al accionar  y su respectivo diseño
+//pendiente !!
+
 class Drawere{
   Drawer drawer(BuildContext context){
     return Drawer(
@@ -75,6 +79,8 @@ class Drawere{
     );
 
   }
+
+  // lista de botones  para accionar su funcion y diseño
   ListTile _listTile({String texto, Function ontap}){
     return ListTile(
       contentPadding: EdgeInsets.all(0),

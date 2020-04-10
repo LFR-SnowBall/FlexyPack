@@ -9,6 +9,9 @@ class ShoppingCart extends StatefulWidget{
   
 }
 
+// Se inicializa la ventana con su respectivo Scaffold que mostrara los productos agregados al carrito
+// pendiente !!
+
 class _ShoppingCartState extends State<ShoppingCart>{
   @override
   Widget build(BuildContext context) {

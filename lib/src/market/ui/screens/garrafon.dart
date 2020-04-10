@@ -10,6 +10,10 @@ class GarrafonScreen extends StatefulWidget{
 
 }
 
+//se implementa la interfaz empezando con un scaffold que es la inicialización de la misma continuando con los valores del widget
+// dando un appbar que es la barra superior de la interfaz con sus respectivos valores y icoos
+//dandole un drawer conocido como menu de hamburguesa derecho que fue diseñado en la carpeta widgets de market para ser utilizado en mas ventanas
+
 class _GarrafonScreenState extends State<GarrafonScreen>{
   Drawere _drawere = new Drawere();
   @override

@@ -9,6 +9,9 @@ class HomeScreen extends StatefulWidget{
 
 }
 
+//  se implementa la interfaz principal sin ninguna funcionalidad en especial solo como presentación de la misma aplicación
+// empezando igual con un inicializador Scaffold continuando coon el menu de hamburguesa y los respectivos logos
+
 class _HomeScreenState extends State<HomeScreen>{
   Drawere _drawere = new Drawere();
   @override

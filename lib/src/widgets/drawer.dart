@@ -71,6 +71,46 @@ class Drawere{
                   texto: 'Bolsa de agua y hielo',
                   ontap: () => Navigator.pushReplacementNamed(context, 'bolsadeaguayhielo')
                 ),
+                _listTile(
+                  texto: 'Maquinas para sellado',
+                  ontap: () => Navigator.pushReplacementNamed(context, 'maquinasparasellado')
+                ),
+                _listTile(
+                  texto: 'Insumos varios',
+                  ontap: () => Navigator.pushReplacementNamed(context, 'insumosvarios')
+                ),
+                _listTile(
+                  texto: 'Insumos quimicos',
+                  ontap: () => Navigator.pushReplacementNamed(context, 'insumosquimicos')
+                ),
+                _listTile(
+                  texto: 'Enfriadores',
+                  ontap: () => Navigator.pushReplacementNamed(context, 'enfriadores')
+                ),
+                _listTile(
+                  texto: 'Equipos de contraccion',
+                  ontap: () => Navigator.pushReplacementNamed(context, 'equipodecontraccion')
+                ),
+                _listTile(
+                  texto: 'Ozonos',
+                  ontap: () => Navigator.pushReplacementNamed(context, 'ozonos')
+                ),
+                _listTile(
+                  texto: 'Insumos varios maquinaria',
+                  ontap: () => Navigator.pushReplacementNamed(context, 'insumosvariosmaquinaria')
+                ),
+                _listTile(
+                  texto: 'Filtros',
+                  ontap: () => Navigator.pushReplacementNamed(context, 'filtros')
+                ),
+                _listTile(
+                  texto: 'Cisternas',
+                  ontap: () => Navigator.pushReplacementNamed(context, 'cisternas')
+                ),
+                _listTile(
+                  texto: 'Portafiltro',
+                  ontap: () => Navigator.pushReplacementNamed(context, 'portafiltros')
+                )
               ]
             ).toList(),
           )

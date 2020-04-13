@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flexypack/src/widgets/drawer.dart';
+import 'package:flexypack/src/widgets/images.dart';
 class HomeScreen extends StatefulWidget{
   @override
   State<StatefulWidget> createState() {
@@ -22,11 +23,11 @@ class _HomeScreenState extends State<HomeScreen>{
       drawer: _drawere.drawer(context),
       appBar: AppBar(
         backgroundColor: Colors.green,
-        title: Image.asset('assets/images/logo.png',width: 200.0,height: 50.0,),
+        title: Image.asset(imagesRoutes().logo+'logo.png',width: 200.0,height: 50.0,),
         centerTitle: true,
       ),
       body: Center(
-        child: Image.asset('assets/images/logo.png',width: 300.0,height: 200.0,),
+        child: Image.asset(imagesRoutes().logo+'logo.png',width: 300.0,height: 200.0,),
       )
     );
   }

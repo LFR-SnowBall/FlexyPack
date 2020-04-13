@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flexypack/src/widgets/drawer.dart';
 import 'package:flexypack/src/market/model/listproduct.dart';
 import 'package:flexypack/src/widgets/listshop.dart';
+import 'package:flexypack/src/widgets/images.dart';
 
 class GarrafonScreen extends StatefulWidget{
   @override
@@ -61,19 +62,28 @@ class _GarrafonScreenState extends State<GarrafonScreen>{
                       decoration: BoxDecoration(
                         color: Colors.grey,
                         borderRadius: BorderRadius.vertical(
+                          bottom: Radius.circular(12),
+
                         top: Radius.circular(12))),
                       child: _ListWidgetsShop.imageHeader(
-                        image: ListProducts().Garrafon[index]['Image'].toString(),
+                        image: imagesRoutes().imageGarrafon+ListProducts().Garrafon[index]['Image'].toString(),
                       ),
                 ),
                 ],
                 ),
                 Expanded(
-                  child: _ListWidgetsShop.productInfo(
+                  child:_ListWidgetsShop.productInfo(
                     title: ListProducts().Garrafon[index]['Title'].toString(),
-                    description: ListProducts().Garrafon[index]['Description'].toString()
+                    description: ListProducts().Garrafon[index]['Description'].toString(),
                   ),
                   ),
+                  Expanded(
+                    child:_ListWidgetsShop.addCart(
+                      image: 'garrafon/'+ListProducts().Garrafon[index]['Image'].toString(), 
+                      title: ListProducts().Garrafon[index]['Title'].toString(), 
+                      description: ListProducts().Garrafon[index]['Description'].toString(),
+                    ), 
+                    ),
                   ],
                 ),
               ),

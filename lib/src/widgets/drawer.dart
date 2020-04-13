@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flexypack/src/widgets/images.dart';
 
 //barra lateral derecha menu hamburguesa
 // se crea un widget local para las screen del market que 
@@ -12,7 +13,7 @@ class Drawere{
         children: <Widget>[
           ListTile(
             leading: Container(
-              child: Image.asset('assets/images/logo.png'),
+              child: Image.asset(imagesRoutes().logo+'logo.png'),
             ),
           ),
           Divider(

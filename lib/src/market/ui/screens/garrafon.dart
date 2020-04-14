@@ -5,6 +5,8 @@ import 'package:flexypack/src/widgets/drawer.dart';
 import 'package:flexypack/src/market/model/listproduct.dart';
 import 'package:flexypack/src/widgets/listshop.dart';
 import 'package:flexypack/src/widgets/images.dart';
+import 'package:flexypack/src/market/model/addcart.dart';
+import 'package:provider/provider.dart';
 
 class GarrafonScreen extends StatefulWidget{
   @override
@@ -24,15 +26,24 @@ class _GarrafonScreenState extends State<GarrafonScreen>{
   Widget build(BuildContext context) {
     final _media = MediaQuery.of(context).size;
     // TODO: implement build
-    return Scaffold(
+    return Consumer<Cart>(builder: (context, cart,child){
+      return Scaffold(
       backgroundColor: Colors.white,
       drawer: _drawere.drawer(context),
       appBar: AppBar(
         actions: <Widget>[
-          IconButton(
-            icon: Icon(Icons.shopping_cart), 
-            onPressed: () => Navigator.pushNamed(context, 'cartshopping')
+          Padding(
+            padding: EdgeInsets.all(8.0),
+            child: Row(
+              children: <Widget>[
+                IconButton(
+                  icon: Icon(Icons.shopping_cart), 
+                  onPressed: () => Navigator.pushNamed(context, 'cartshopping')
+                  ),
+                  Text(cart.addcount.toString(),style: TextStyle(fontSize: 20,fontWeight:FontWeight.bold),),
+              ],
             ),
+          ),
         ],
         backgroundColor: Colors.green,
         title: Text('Garrafon'),
@@ -79,9 +90,11 @@ class _GarrafonScreenState extends State<GarrafonScreen>{
                   ),
                   Expanded(
                     child:_ListWidgetsShop.addCart(
-                      image: 'garrafon/'+ListProducts().Garrafon[index]['Image'].toString(), 
-                      title: ListProducts().Garrafon[index]['Title'].toString(), 
-                      description: ListProducts().Garrafon[index]['Description'].toString(),
+                      action: (){
+                        cart.add(image: 'garrafon/'+ListProducts().Garrafon[index]['Image'].toString(), 
+                        title: ListProducts().Garrafon[index]['Title'].toString(), 
+                        description: ListProducts().Garrafon[index]['Description'].toString(),);
+                      },
                     ), 
                     ),
                   ],
@@ -92,6 +105,8 @@ class _GarrafonScreenState extends State<GarrafonScreen>{
         },
         ),
     );
-  }
 
-}
+    });
+
+    }
+  }

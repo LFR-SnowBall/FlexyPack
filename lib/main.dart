@@ -1,8 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:flexypack/routes/routes.dart';
 import 'package:flutter/services.dart';
+import 'package:provider/provider.dart';
+import 'package:flexypack/src/market/model/addcart.dart';
 
-void main() => runApp(MyApp());
+
+void main(){
+  runApp(ChangeNotifierProvider(
+    create: (context) => Cart(),
+    child: MyApp(),
+    ));
+}
 
 class MyApp extends StatelessWidget {
   // This widget is the root of your application.
@@ -59,6 +67,7 @@ class _MyHomePageState extends State<MyHomePage> {
     // se manda llamar la ruta inicial que en este caso es home 
     
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       initialRoute: 'home',
       onGenerateRoute: Router.generateRoute,
     );

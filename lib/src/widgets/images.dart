@@ -1,6 +1,6 @@
 class imagesRoutes{
   String logo = 'assets/images/logo/';
-  String cartroute = 'asset/images/';
+  String cartroute = 'assets/images/';
   String imageGarrafon = 'assets/images/garrafon/';
   String imageTapa = 'assets/images/tapa/';
   String imageBotella = 'assets/images/bottella/';

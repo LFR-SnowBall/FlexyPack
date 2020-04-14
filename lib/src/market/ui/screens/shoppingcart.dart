@@ -1,7 +1,8 @@
-import 'package:flexypack/src/market/model/listproduct.dart';
+import 'package:flexypack/src/market/model/addcart.dart';
 import 'package:flexypack/src/widgets/images.dart';
 import 'package:flexypack/src/widgets/listshop.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 
 class ShoppingCart extends StatefulWidget{
   @override
@@ -17,20 +18,21 @@ class ShoppingCart extends StatefulWidget{
 
 class _ShoppingCartState extends State<ShoppingCart>{
   final ListWidgetsShop  _ListWidgetsShop = ListWidgetsShop();
-  final ListProducts _ListProducts = ListProducts();
-  @override
+  
   Widget build(BuildContext context) {
   final _media = MediaQuery.of(context).size;
     // TODO: implement build
-    if(ListProducts().Cart.length>0){
-      return Scaffold(
+    return Consumer<Cart>(
+      builder: (context,cart,child){
+        return Scaffold(
         backgroundColor: Colors.white,
         appBar: AppBar(
           backgroundColor: Colors.green,
           title: Icon(Icons.shopping_cart),
           centerTitle: true,
         ),
-        body: Center(
+        body: cart.cartProducts.length==0
+        ?Center(
           child: Container(
             padding: EdgeInsets.only(bottom: _media.width/1.2, top: _media.width/1.2),
           alignment: Alignment(0.0,0.0),
@@ -52,19 +54,8 @@ class _ShoppingCartState extends State<ShoppingCart>{
           )
         ),
         )
-      );
-    }
-    else{
-      print(_ListProducts.Cart.toString());
-      return Scaffold(
-        backgroundColor: Colors.white,
-        appBar: AppBar(
-          backgroundColor: Colors.green,
-          title: Icon(Icons.shopping_cart),
-          centerTitle: true,
-        ),
-        body: GridView.builder(
-        itemCount: ListProducts().Cart.length,
+        : GridView.builder(
+        itemCount: cart.cartProducts.length,
         gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
           crossAxisCount: 2,
           crossAxisSpacing: 5,
@@ -91,22 +82,23 @@ class _ShoppingCartState extends State<ShoppingCart>{
 
                         top: Radius.circular(12))),
                       child: _ListWidgetsShop.imageHeader(
-                        image: imagesRoutes().cartroute+_ListProducts.Cart[index]['Image'].toString(),
+                        image: imagesRoutes().cartroute+cart.cartProducts[index]['Image'].toString()
+                        //imagesRoutes().cartroute+_ListProducts.Cart[index]['Image'].toString(),
                       ),
                 ),
                 ],
                 ),
                 Expanded(
                   child:_ListWidgetsShop.productInfo(
-                    title: _ListProducts.Cart[index]['Title'].toString(),
-                    description: _ListProducts.Cart[index]['Description'].toString(),
+                    title: cart.cartProducts[index]['Title'].toString(),
+                    description: cart.cartProducts[index]['Description'].toString(),
                   ),
                   ),
                   Expanded(
-                    child:_ListWidgetsShop.addCart(
-                      image: imagesRoutes().imageGarrafon+ListProducts().Cart[index]['Image'].toString(), 
-                      title: ListProducts().Cart[index]['Title'].toString(), 
-                      description: ListProducts().Cart[index]['Description'].toString(),
+                    child:_ListWidgetsShop.removeCart(
+                      action: (){
+                        cart.remove(index: index);
+                      },
                     ), 
                     ),
                   ],
@@ -116,8 +108,9 @@ class _ShoppingCartState extends State<ShoppingCart>{
         },
         ),
       );
-    }
-    
+      },
+    );
+  
   }
   
 }

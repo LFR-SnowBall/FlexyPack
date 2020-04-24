@@ -11,11 +11,16 @@ class ListWidgetsShop{
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.vertical(top: Radius.circular(12)),
       ),
-      child: FadeInImage(
+      child: FlatButton(
+        padding: EdgeInsets.all(0.0),
+        onPressed: (){
+          debugPrint('Button cliket');
+        }, 
+        child: FadeInImage(
         placeholder: AssetImage('assets/images/logo.png'), 
         image: AssetImage(image),
         fit: BoxFit.fitWidth,
-        ),
+        ),),
     );
   }
 

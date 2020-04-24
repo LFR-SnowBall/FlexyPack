@@ -28,7 +28,7 @@ class _GarrafonScreenState extends State<GarrafonScreen>{
     // TODO: implement build
     return Consumer<Cart>(builder: (context, cart,child){
       return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: Colors.white70,
       drawer: _drawere.drawer(context),
       appBar: AppBar(
         actions: <Widget>[
@@ -60,7 +60,7 @@ class _GarrafonScreenState extends State<GarrafonScreen>{
         itemBuilder: (context,index){
           return Container(
             decoration: BoxDecoration(
-              color: Colors.black12,
+              color: Colors.white,
               borderRadius: BorderRadius.circular(15.0),),
               child: Card(
                 child: Column(
@@ -71,13 +71,12 @@ class _GarrafonScreenState extends State<GarrafonScreen>{
                       width: _media.width,
                       height: _media.height*0.17,
                       decoration: BoxDecoration(
-                        color: Colors.grey,
                         borderRadius: BorderRadius.vertical(
                           bottom: Radius.circular(12),
 
                         top: Radius.circular(12))),
                       child: _ListWidgetsShop.imageHeader(
-                        image: imagesRoutes().imageGarrafon+ListProducts().Garrafon[index]['Image'].toString(),
+                        image: imagesRoutes().imageGarrafon+ListProducts().Garrafon[index]['Image'].toString()
                       ),
                 ),
                 ],

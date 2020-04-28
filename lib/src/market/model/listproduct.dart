@@ -4,17 +4,21 @@ import 'package:flutter/material.dart';
 class ListProducts{
   List<Map<dynamic,dynamic>> Garrafon =[
     {'Image':'pvc/g20lts.jpg',
-      'Title':'Envase de PVC 20 LTS',
-      'Description':'Rosca 49 MM\ncon asa'},
+      'Title':'ENVASE DE PVC 20 LTS ',
+      'Description1':'C/ASA\nROSCA 49 MM',
+      'Description2':"Material: PVC\n\nColores: azul\n\nTapa: Rosca 49 mm\n\nCon asa"},
       {'Image':'pvc/g11lts.jpg',
-        'Title':'Envase de PVC 11 LTS',
-        'Description':'Rosca 49 MM\ncon asa'},
+        'Title':'ENVASE DE PVC 11 LTS',
+        'Description1':'C/ASA\nROSCA 49 MM',
+        'Description2':'Material: PVC\n\nColores: azul\n\nTapa: Rosca 49 mm\n\nCon asa'},
         {'Image':'pet/g20lts.jpg',
-          'Title':'Envase de PET 20 LTS',
-          'Description':'Rosca 49 MM\nsin asa'},
+          'Title':'ENVASE PET 20 LTS ',
+          'Description1':'C/ASA\nROSCA 54 MM PLASTIMAR',
+          'Description2':'Material: Pet\n\nColores: azul\n\nTapa: 54 mm\n\nCon asa incrustada'},
           {'Image':'pet/g11lts.jpg',
-            'Title':'Envase de PET 10 LTS',
-            'Description':'Rosca 49 MM\nsin asa'}
+            'Title':'ENVASE DE PET 11 LTS',
+            'Description1':'C/ASA\nROSCA 53 MM',
+            'Description2':'Material: Pet\n\nColores: azul\n\nTapa: Rosca 53 mm\n\nCon asa incrustada'}
       ];
       
   List<Map<dynamic,dynamic>> Cart=[];

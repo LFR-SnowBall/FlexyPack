@@ -25,7 +25,7 @@ class _ShoppingCartState extends State<ShoppingCart>{
     return Consumer<Cart>(
       builder: (context,cart,child){
         return Scaffold(
-        backgroundColor: Colors.white,
+        backgroundColor: Color.fromRGBO(250, 250, 250, 6), //blanco HEX #FAFAFA
         appBar: AppBar(
           backgroundColor: Colors.green,
           title: Icon(Icons.shopping_cart),
@@ -65,9 +65,11 @@ class _ShoppingCartState extends State<ShoppingCart>{
         itemBuilder: (contex,index){
           return Container(
             decoration: BoxDecoration(
-              color: Colors.black12,
               borderRadius: BorderRadius.circular(15.0),),
               child: Card(
+                shape: RoundedRectangleBorder(
+                   borderRadius: BorderRadius.vertical(top: Radius.circular(12),bottom: Radius.circular(12)),
+                   ),
                 child: Column(
                   children: <Widget>[
                     Stack(

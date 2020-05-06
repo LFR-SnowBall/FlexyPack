@@ -36,7 +36,7 @@ class ListProducts{
       'Description1':'',
       'Description2':''
     }
-  ]
+  ];
   
       
   List<Map<dynamic,dynamic>> Cart=[];

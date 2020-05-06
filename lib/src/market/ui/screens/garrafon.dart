@@ -94,7 +94,6 @@ class _GarrafonScreenState extends State<GarrafonScreen>{
                               );
                               }),
                             );
-                          print('Accion button '+index.toString());
                         }
                       ),
                 ),
@@ -125,7 +124,7 @@ class _GarrafonScreenState extends State<GarrafonScreen>{
         },
         ),
     );
-
+ 
     });
 
     }

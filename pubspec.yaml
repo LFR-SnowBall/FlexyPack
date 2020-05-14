@@ -45,22 +45,22 @@ flutter:
     #rutas de imagenes
     - assets/images/logo/logo.png
     #Garrafon pet
-    - assets/images/garrafon/pet/g11lts.jpg
-    - assets/images/garrafon/pet/g19lts.jpg
-    - assets/images/garrafon/pet/g19lt.jpg
-    - assets/images/garrafon/pet/g20lts.jpg
-    - assets/images/garrafon/pet/gclasic.jpg
+    - assets/images/garrafon/pet/
+    - assets/images/garrafon/pet/
+    - assets/images/garrafon/pet/
+    - assets/images/garrafon/pet/
+    - assets/images/garrafon/pet/
     #Garrafon pvc
-    - assets/images/garrafon/pvc/g1lts.jpg
-    - assets/images/garrafon/pvc/g2lts.jpg
-    - assets/images/garrafon/pvc/g11lts.jpg
-    - assets/images/garrafon/pvc/g19lts.jpg
-    - assets/images/garrafon/pvc/g20lts.jpg
+    - assets/images/garrafon/pvc/
+    - assets/images/garrafon/pvc/
+    - assets/images/garrafon/pvc/
+    - assets/images/garrafon/pvc/
+    - assets/images/garrafon/pvc/
     #Porta Garrafon
-    - assets/images/garrafon/portagarrafon/b11lts.jpg
-    - assets/images/garrafon/portagarrafon/pg1.jpg
-    - assets/images/garrafon/portagarrafon/pg2.jpg
-    - assets/images/garrafon/portagarrafon/pg3.jpg
+    - assets/images/garrafon/portagarrafon/
+    - assets/images/garrafon/portagarrafon/
+    - assets/images/garrafon/portagarrafon/
+    - assets/images/garrafon/portagarrafon/
 
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in

@@ -3,7 +3,7 @@ class imagesRoutes{
   String cartroute = 'assets/images/';
   String imageGarrafon = 'assets/images/garrafon/';
   String imageTapa = 'assets/images/tapa/';
-  String imageBotella = 'assets/images/bottella/';
+  String imageBotella = 'assets/images/botellas/';
   String imageSello = 'assets/images/sello/';
   String imageEtiqueta = 'assets/images/etiqueta/';
   String imageCalcomania = 'assets/images/calcomania/';

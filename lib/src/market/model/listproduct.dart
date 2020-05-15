@@ -31,9 +31,9 @@ class ListProducts{
 
   List<Map<dynamic,dynamic>> Botella =[
     {
-      'Image':'',
-      'Title':'',
-      'Description1':'',
+      'Image':'alcolehera/ALCOHOLERA-DE-1000-M.jpg',
+      'Title':'ENVASE ALCOHOLERO DE POLIETILENO 1000 ML',
+      'Description1':'C/TAPA',
       'Description2':''
     }
   ];

@@ -446,7 +446,609 @@ List<Map<dynamic,dynamic>> Ozonos =[
 		'Description1':'400mg/h\n400 Garrafones por dia\nMultifuncional',
 		'Description2':'400mg/h\n\n400 Garrafones por dia\n\nMultifuncional',
 	}
-];      
+]; 
+
+
+List<Map<dynamic,dynamic>> InsumosVariosMaquinaria =[
+	{
+		'Image':'braqueta.img',
+		'Title':'BRAQUET PARA SOPORTE',
+		'Description1':'Para Soporte\nDel 10 pulgadas\nSlim',
+		'Description2':'Para Soporte\n\nDel 10 pulgadas\n\nSlim',
+	},
+	{
+		'Image':'carbon.img',
+		'Title':'CARBÓN ACTIVADO',
+		'Description1':'Activado\nImportado',
+		'Description2':'Activado\n\nImportado',
+	},
+	{
+		'Image':'cepilladora.img',
+		'Title':'CEPILLADORA DE GARRAFÓN',
+		'Description1':'Acero Inoxidable\nPara un Garrafon\nDe 1/2HP y Bomba',
+		'Description2':'Acero Inoxidable\n\nPara un Garrafon\n\nDe 1/2HP y Bomba',
+	},
+	{
+		'Image':'controlAuto.img',
+		'Title':'CONTROL AUTOMÁTICO PRESIÓN',
+		'Description1':'Automático\nDe Presión',
+		'Description2':'Automático\n\nDe Presión',
+	},
+	{
+		'Image':'tapaPortame.img',
+		'Title':'TAPA PARA PORTAMEMBRANA',
+		'Description1':'Portamenbrana\nDe 4 pilgadas',
+		'Description2':'Portamenbrana\n\nDe 4 pulgadas',
+	},
+	{
+		'Image':'grava.img',
+		'Title':'GRAVA',
+		'Description1':'Grava',
+		'Description2':'Grava',
+	},
+	{
+		'Image':'membrana1.img',
+		'Title':'MEMBRANA HIDRONEUMATICA CHICA',
+		'Description1':'Membrana\n24Lts',
+		'Description2':'Membrana\n\nCapacidad: 24Lts',
+	},
+	{
+		'Image':'membrana2.img',
+		'Title':'MEMBRANA HIDRONEUMATICA GRANDE',
+		'Description1':'Membrana\n50Lts',
+		'Description2':'Membrana\n\nCapacidad: 50Lts',
+	},
+	{
+		'Image':'mangera1.img',
+		'Title':'MANGUERA DE GRADO ALIMENTICIO',
+		'Description1':'Grado Alimenticio\n1/2"',
+		'Description2':'Grado Alimenticio\n\nMedida: 1/2 pulgadas',
+	},
+	{
+		'Image':'mangera2.img',
+		'Title':'MANGUERA DE GRADO ALIMENTICIO',
+		'Description1':'Grado Alimenticio\n3/4 pulgadas',
+		'Description2':'Grado Alimenticio\n\nMedida: 3/4 pulgadas',
+	},
+	{
+		'Image':'mangera3.img',
+		'Title':'MANGUERA DE GRADO ALIMENTICIO',
+		'Description1':'Grado Alimenticio\n1"',
+		'Description2':'Grado Alimenticio\n\nMedida: 1 pulgadas',
+	},
+	{
+		'Image':'mangeraAsper.img',
+		'Title':'MANGUERA ASPERSORA',
+		'Description1':'Para Lavado de Garrafones',
+		'Description2':'Para Lavado de Garrafones',
+	},
+	{
+		'Image':'membranaHy.img',
+		'Title':'MEMBRANA HYDRON',
+		'Description1':'Membrana',
+		'Description2':'Membrana',
+	},
+	{
+		'Image':'pedal.img',
+		'Title':'PEDAL ELECTRICO',
+		'Description1':'Para Lavado',
+		'Description2':'Para Lavado',
+	},
+
+	{
+		'Image':'valvula1.img',
+		'Title':'VALVULA DE BOLA',
+		'Description1':'De Bola\nDel 1/2 pulgadas',
+		'Description2':'De Bola\n\nDel 1/2 pulgadas',
+	},
+	{
+		'Image':'valvula2.img',
+		'Title':'VALVULA CHECK',
+		'Description1':'Medida de 1/8 pulgadas',
+		'Description2':'Medida: 1/8 pulgadas',
+	},
+	{
+		'Image':'valvula3.img',
+		'Title':'VALVULA CHECK',
+		'Description1':'Medida de 1/4 pulgadas',
+		'Description2':'Medida: 1/4 pulgadas',
+	},
+	{
+		'Image':'valvula4.img',
+		'Title':'VALVULA CHECK',
+		'Description1':'Medida de 1pulgada X 1 pulgada',
+		'Description2':'Medida: 1 pulgada X 1 pulgada',
+	},
+	{
+		'Image':'valvula5.img',
+		'Title':'VALVULA DE ESFERA',
+		'Description1':'De Esfera\n3/4',
+		'Description2':'De Esfera\n\n3/4',
+	},
+	{
+		'Image':'valvula6.img',
+		'Title':'VALVULA CHECK DE COLUMPIO',
+		'Description1':'De Columpio\nMedida de 1 pulgada X 1 pulgada',
+		'Description2':'De Columpio\n\nMedida: 1 pulgada X 1 pulgada',
+	},
+	{
+		'Image':'valvula7.img',
+		'Title':'VALVULA MANUAL',
+		'Description1':'Filtro\nMedida de 1 pulgada X 1 pulgada',
+		'Description2':'Filtro\n\nMedida: 1 pulgada X 1 pulgada',
+	},
+
+	{
+		'Image':'ventury.img',
+		'Title':'VENTURY',
+		'Description1':'Medida de 3/4',
+		'Description2':'Medida: 3/4',
+	},
+	{
+		'Image':'resina.img',
+		'Title':'RESINA CATIÓNICA',
+		'Description1':'Resina',
+		'Description2':'Resina',
+	},
+	{
+		'Image':'sosa.img',
+		'Title':'SOSA CAUSTICA',
+		'Description1':'Sosa',
+		'Description2':'Sosa',
+	},
+	{
+		'Image':'arenaZeoli.img',
+		'Title':'ARENA ZEOLITA',
+		'Description1':'Zeolita',
+		'Description2':'Zeolita',
+	}
+];
+
+
+List<Map<dynamic,dynamic>> Filtros =[
+	{
+		'Image':'filtroCarbon10BB.img',
+		'Title':'FILTRO CARBÓN BLOCK BB',
+		'Description1':'Medida de 10pulgadas\n5 Micras\nBB',
+		'Description2':'Medida: 10pulgadas\n\n5 Micras\n\nBB',
+	},
+	{
+		'Image':'filtroCarbon10SLIM.img',
+		'Title':'FILTRO CARBÓN BLOCK SLIM',
+		'Description1':'Medida de 10pulgadas\n5 Micras\nSLIM',
+		'Description2':'Medida: 10pulgadas\n\n5 Micras\n\nSLIM',
+	},
+	{
+		'Image':'filtroCarbon20BB.img',
+		'Title':'FILTRO CARBÓN BLOCK BB',
+		'Description1':'Medida de 20pulgadas\n5 Micras\nBB',
+		'Description2':'Medida: 20pulgadas\n\n5 Micras\n\nBB',
+	},
+	{
+		'Image':'filtroCarbon20SLIM.img',
+		'Title':'FILTRO CARBÓN BLOCK SLIM',
+		'Description1':'Medida de 20pulgadas\n5 Micras\nSLIM',
+		'Description2':'Medida: 20pulgadas\n\n5 Micras\n\nSLIM',
+  },
+	{
+		'Image':'filtroDoblrPropo10SLIM.img',
+		'Title':'FILTRO DOBLE PROPOSITO',
+		'Description1':'Doble Proposito\nMedida de 10pulgadas\n10 Micras\nSLIM',
+		'Description2':'Doble Proposito\n\nMedida: 10pulgadas\n\n10 Micras\n\nSLIM',
+	},
+	{
+		'Image':'filtroCarbonGranu10SLIM.img',
+		'Title':'FILTRO DE CARBON GRANULADO SLIM',
+		'Description1':'Carbon Granulado\n10 pulgadas\nSLIM',
+		'Description2':'Carbon Granulado\n\n10 pulgadas\n\nSLIM',
+	},
+	{
+		'Image':'filtroCarbonGranu10BB.img',
+		'Title':'FILTRO DE CARBON GRANULADO BB',
+		'Description1':'Carbon Granulado\n10 pulgadas\nBB',
+		'Description2':'Carbon Granulado\n\n10 pulgadas\n\nBB',
+	},
+	{
+		'Image':'filtroHilado10BB1.img',
+		'Title':'FILTRO HILADO BB',
+		'Description1':'Medida de 10pulgadas\n1 Micra\nBB',
+		'Description2':'Medida: 10pulgadas\n\n1 Micra\n\nBB',
+	},
+	{
+		'Image':'filtroHilado10BB5.img',
+		'Title':'FILTRO HILADO BB',
+		'Description1':'Medida de 10pulgadas\n5 Micra\nBB',
+		'Description2':'Medida: 10pulgadas\n\n5 Micra\n\nBB',
+	},
+	{
+		'Image':'filtroHilado10BB10.img',
+		'Title':'FILTRO HILADO BB',
+		'Description1':'Medida de 10pulgadas\n10 Micra\nBB',
+		'Description2':'Medida: 10pulgadas\n\n10 Micra\n\nBB',
+	},
+	{
+		'Image':'filtroHilado10BB20.img',
+		'Title':'FILTRO HILADO BB',
+		'Description1':'Medida de 10pulgadas\n20 Micra\nBB',
+		'Description2':'Medida: 10pulgadas\n\n20 Micra\n\nBB',
+	},
+	{
+		'Image':'filtroHilado10SLIM1.img',
+		'Title':'FILTRO HILADO SLIM',
+		'Description1':'Medida de 10pulgadas\n1 Micra\nSLIM',
+		'Description2':'Medida: 10pulgadas\n\n1 Micra\n\nSLIM',
+	},
+	{
+		'Image':'filtroHilado10SLIM5.img',
+		'Title':'FILTRO HILADO SLIM',
+		'Description1':'Medida de 10pulgadas\n5 Micra\nSLIM',
+		'Description2':'Medida: 10pulgadas\n\n5 Micra\n\nSLIM',
+	},
+	{
+		'Image':'filtroHilado10SLIM10.img',
+		'Title':'FILTRO HILADO SLIM',
+		'Description1':'Medida de 10pulgadas\n10 Micra\nSLIM',
+		'Description2':'Medida: 10pulgadas\n\n10 Micra\n\nSLIM',
+	},
+	{
+		'Image':'filtroHilado10SLIM20.img',
+		'Title':'FILTRO HILADO SLIM',
+		'Description1':'Medida de 10pulgadas\n20 Micra\nSLIM',
+		'Description2':'Medida: 10pulgadas\n\n20 Micra\n\nSLIM',
+	},
+
+	{
+		'Image':'filtroHilado20BB1.img',
+		'Title':'FILTRO HILADO BB',
+		'Description1':'Medida de 20pulgadas\n1 Micra\nBB',
+		'Description2':'Medida: 20pulgadas\n\n1 Micra\n\nBB',
+	},
+	{
+		'Image':'filtroHilado20BB5.img',
+		'Title':'FILTRO HILADO BB',
+		'Description1':'Medida de 20pulgadas\n5 Micra\nBB',
+		'Description2':'Medida: 20pulgadas\n\n5 Micra\n\nBB',
+	},
+	{
+		'Image':'filtroHilado20BB10.img',
+		'Title':'FILTRO HILADO BB',
+		'Description1':'Medida de 20pulgadas\n10 Micra\nBB',
+		'Description2':'Medida: 20pulgadas\n\n10 Micra\n\nBB',
+	},
+	{
+		'Image':'filtroHilado10BB20.img',
+		'Title':'FILTRO HILADO BB',
+		'Description1':'Medida de 20pulgadas\n20 Micra\nBB',
+		'Description2':'Medida: 20pulgadas\n\n20 Micra\n\nBB',
+	},
+	{
+		'Image':'filtroHilado20SLIM1.img',
+		'Title':'FILTRO HILADO SLIM',
+		'Description1':'Medida de 20pulgadas\n1 Micra\nSLIM',
+		'Description2':'Medida: 20pulgadas\n\n1 Micra\n\nSLIM',
+	},
+	{
+		'Image':'filtroHilado20SLIM5.img',
+		'Title':'FILTRO HILADO SLIM',
+		'Description1':'Medida de 20pulgadas\n5 Micra\nSLIM',
+		'Description2':'Medida: 20pulgadas\n\n5 Micra\n\nSLIM',
+	},
+	{
+		'Image':'filtroHilado20SLIM10.img',
+		'Title':'FILTRO HILADO SLIM',
+		'Description1':'Medida de 20pulgadas\n10 Micra\nSLIM',
+		'Description2':'Medida: 20pulgadas\n\n10 Micra\n\nSLIM',
+	},
+	{
+		'Image':'filtroHilado20SLIM20.img',
+		'Title':'FILTRO HILADO SLIM',
+		'Description1':'Medida de 20pulgadas\n20 Micra\nSLIM',
+		'Description2':'Medida: 20pulgadas\n\n20 Micra\n\nSLIM',
+	},
+	{
+		'Image':'filtroPoliester10BB1.img',
+		'Title':'FILTRO DE POLIESTER PLISADO BB',
+		'Description1':'Medida de 10pulgadas\n1 Micra\nBB',
+		'Description2':'Medida: 10pulgadas\n\n1 Micra\n\nBB',
+	},
+	{
+		'Image':'filtroPoliester10BB5.img',
+		'Title':'FILTRO DE POLIESTER PLISADO BB',
+		'Description1':'Medida de 10pulgadas\n5 Micra\nBB',
+		'Description2':'Medida: 10pulgadas\n\n5 Micra\n\nBB',
+	},
+	{
+		'Image':'filtroPoliester10BB10.img',
+		'Title':'FILTRO DE POLIESTER PLISADO BB',
+		'Description1':'Medida de 10pulgadas\n10 Micra\nBB',
+		'Description2':'Medida: 10pulgadas\n\n10 Micra\n\nBB',
+	},
+	{
+		'Image':'filtroPoliester10BB20.img',
+		'Title':'FILTRO DE POLIESTER PLISADO BB',
+		'Description1':'Medida de 10pulgadas\n20 Micra\nBB',
+		'Description2':'Medida: 10pulgadas\n\n20 Micra\n\nBB',
+	},
+	{
+		'Image':'filtroPoliester10SLIM1.img',
+		'Title':'FILTRO DE POLIESTER PLISADO SLIM',
+		'Description1':'Medida de 10pulgadas\n1 Micra\nSLIM',
+		'Description2':'Medida: 10pulgadas\n\n1 Micra\n\nSLIM',
+	},
+	{
+		'Image':'filtroPoliester10SLIM5.img',
+		'Title':'FILTRO DE POLIESTER PLISADO SLIM',
+		'Description1':'Medida de 10pulgadas\n5 Micra\nSLIM',
+		'Description2':'Medida: 10pulgadas\n\n5 Micra\n\nSLIM',
+	},
+	{
+		'Image':'filtroPoliester10SLIM10.img',
+		'Title':'FILTRO DE POLIESTER PLISADO SLIM',
+		'Description1':'Medida de 10pulgadas\n10 Micra\nSLIM',
+		'Description2':'Medida: 10pulgadas\n\n10 Micra\n\nSLIM',
+	},
+	{
+		'Image':'filtroPoliester10SLIM20.img',
+		'Title':'FILTRO DE POLIESTER PLISADO SLIM',
+		'Description1':'Medida de 10pulgadas\n20 Micra\nSLIM',
+		'Description2':'Medida: 10pulgadas\n\n20 Micra\n\nSLIM',
+	},
+	{
+		'Image':'filtroPoliester20BB1.img',
+		'Title':'FILTRO DE POLIESTER PLISADO BB',
+		'Description1':'Medida de 20pulgadas\n1 Micra\nBB',
+		'Description2':'Medida: 20pulgadas\n\n1 Micra\n\nBB',
+	},
+	{
+		'Image':'filtroPoliester20BB5.img',
+		'Title':'FILTRO DE POLIESTER PLISADO BB',
+		'Description1':'Medida de 20pulgadas\n5 Micra\nBB',
+		'Description2':'Medida: 20pulgadas\n\n5 Micra\n\nBB',
+	},
+	{
+		'Image':'filtroPoliester20BB10.img',
+		'Title':'FILTRO DE POLIESTER PLISADO BB',
+		'Description1':'Medida de 20pulgadas\n10 Micra\nBB',
+		'Description2':'Medida: 20pulgadas\n\n10 Micra\n\nBB',
+	},
+	{
+		'Image':'filtroPoliester20BB20.img',
+		'Title':'FILTRO DE POLIESTER PLISADO BB',
+		'Description1':'Medida de 20pulgadas\n20 Micra\nBB',
+		'Description2':'Medida: 20pulgadas\n\n20 Micra\n\nBB',
+	},
+	{
+		'Image':'filtroPoliester20SLIM1.img',
+		'Title':'FILTRO DE POLIESTER PLISADO SLIM',
+		'Description1':'Medida de 20pulgadas\n1 Micra\nSLIM',
+		'Description2':'Medida: 20pulgadas\n\n1 Micra\n\nSLIM',
+	},
+	{
+		'Image':'filtroPoliester20SLIM5.img',
+		'Title':'FILTRO DE POLIESTER PLISADO SLIM',
+		'Description1':'Medida de 20pulgadas\n5 Micra\nSLIM',
+		'Description2':'Medida: 20pulgadas\n\n5 Micra\n\nSLIM',
+	},
+	{
+		'Image':'filtroPoliester20SLIM10.img',
+		'Title':'FILTRO DE POLIESTER PLISADO SLIM',
+		'Description1':'Medida de 20pulgadas\n10 Micra\nSLIM',
+		'Description2':'Medida: 20pulgadas\n\n10 Micra\n\nSLIM',
+	},
+	{
+		'Image':'filtroPoliester20SLIM20.img',
+		'Title':'FILTRO DE POLIESTER PLISADO SLIM',
+		'Description1':'Medida de 20pulgadas\n20 Micra\nSLIM',
+		'Description2':'Medida: 20pulgadas\n\n20 Micra\n\nSLIM',
+	},
+	{
+		'Image':'filtroPolipropileno10BB1.img',
+		'Title':'FILTRO DE POLIPROPILENO SPUN BB',
+		'Description1':'Medida de 10pulgadas\n1 Micra\nBB',
+		'Description2':'Medida: 10pulgadas\n\n1 Micra\n\nBB',
+	},
+	{
+		'Image':'filtroPolipropileno10BB5.img',
+		'Title':'FILTRO DE POLIPROPILENO SPUN BB',
+		'Description1':'Medida de 10pulgadas\n5 Micra\nBB',
+		'Description2':'Medida: 10pulgadas\n\n5 Micra\n\nBB',
+	},
+	{
+		'Image':'filtroPolipropileno10BB10.img',
+		'Title':'FILTRO DE POLIPROPILENO SPUN BB',
+		'Description1':'Medida de 10pulgadas\n10 Micra\nBB',
+		'Description2':'Medida: 10pulgadas\n\n10 Micra\n\nBB',
+	},
+	{
+		'Image':'filtroPolipropileno10BB20.img',
+		'Title':'FILTRO DE POLIPROPILENO SPUN BB',
+		'Description1':'Medida de 10pulgadas\n20 Micra\nBB',
+		'Description2':'Medida: 10pulgadas\n\n20 Micra\n\nBB',
+	},
+	{
+		'Image':'filtroPolipropileno10SLIM1.img',
+		'Title':'FILTRO DE POLIPROPILENO SPUN SLIM',
+		'Description1':'Medida de 10pulgadas\n1 Micra\nSLIM',
+		'Description2':'Medida: 10pulgadas\n\n1 Micra\n\NSLIM',
+	},
+	{
+		'Image':'filtroPolipropileno10SLIM5.img',
+		'Title':'FILTRO DE POLIPROPILENO SPUN SLIM',
+		'Description1':'Medida de 10pulgadas\n5 Micra\nSLIM',
+		'Description2':'Medida: 10pulgadas\n\n5 Micra\n\nSLIM',
+	},
+	{
+		'Image':'filtroPolipropileno10SLIM10.img',
+		'Title':'FILTRO DE POLIPROPILENO SPUN SLIM',
+		'Description1':'Medida de 10pulgadas\n10 Micra\nSLIM',
+		'Description2':'Medida: 10pulgadas\n\n10 Micra\n\nSLIM',
+	},
+	{
+		'Image':'filtroPolipropileno10SLIM20.img',
+		'Title':'FILTRO DE POLIPROPILENO SPUN SLIM',
+		'Description1':'Medida de 10pulgadas\n20 Micra\nSLIM',
+		'Description2':'Medida: 10pulgadas\n\n20 Micra\n\nSLIM',
+	},
+	{
+		'Image':'filtroPolipropileno20BB1.img',
+		'Title':'FILTRO DE POLIPROPILENO SPUN BB',
+		'Description1':'Medida de 20pulgadas\n1 Micra\nBB',
+		'Description2':'Medida: 20pulgadas\n\n1 Micra\n\nBB',
+	},
+	{
+		'Image':'filtroPolipropileno20BB5.img',
+		'Title':'FILTRO DE POLIPROPILENO SPUN BB',
+		'Description1':'Medida de 20pulgadas\n5 Micra\nBB',
+		'Description2':'Medida: 20pulgadas\n\n5 Micra\n\nBB',
+	},
+	{
+		'Image':'filtroPolipropileno20BB10.img',
+		'Title':'FILTRO DE POLIPROPILENO SPUN BB',
+		'Description1':'Medida de 20pulgadas\n10 Micra\nBB',
+		'Description2':'Medida: 20pulgadas\n\n10 Micra\n\nBB',
+	},
+	{
+		'Image':'filtroPolipropileno20BB20.img',
+		'Title':'FILTRO DE POLIPROPILENO SPUN BB',
+		'Description1':'Medida de 20pulgadas\n20 Micra\nBB',
+		'Description2':'Medida: 20pulgadas\n\n20 Micra\n\nBB',
+	},
+	{
+		'Image':'filtroPolipropileno20SLIM1.img',
+		'Title':'FILTRO DE POLIPROPILENO SPUN SLIM',
+		'Description1':'Medida de 20pulgadas\n1 Micra\nSLIM',
+		'Description2':'Medida: 20pulgadas\n\n1 Micra\n\NSLIM',
+	},
+	{
+		'Image':'filtroPolipropileno20SLIM5.img',
+		'Title':'FILTRO DE POLIPROPILENO SPUN SLIM',
+		'Description1':'Medida de 20pulgadas\n5 Micra\nSLIM',
+		'Description2':'Medida: 20pulgadas\n\n5 Micra\n\nSLIM',
+	},
+	{
+		'Image':'filtroPolipropileno20SLIM10.img',
+		'Title':'FILTRO DE POLIPROPILENO SPUN SLIM',
+		'Description1':'Medida de 20pulgadas\n10 Micra\nSLIM',
+		'Description2':'Medida: 20pulgadas\n\n10 Micra\n\nSLIM',
+	},
+	{
+		'Image':'filtroPolipropileno20SLIM20.img',
+		'Title':'FILTRO DE POLIPROPILENO SPUN SLIM',
+		'Description1':'Medida de 20pulgadas\n20 Micra\nSLIM',
+		'Description2':'Medida: 20pulgadas\n\n20 Micra\n\nSLIM',
+	}
+];
+
+
+List<Map<dynamic,dynamic>> Cisternas =[
+	{
+		'Image':'cisterna200.img',
+		'Title':'CISTERNA VERTICAL',
+		'Description1':'Vertical\n200Lts',
+		'Description2':'Capasidad: 200Lts\n\nVertical',
+	},
+	{
+		'Image':'cisterna450.img',
+		'Title':'CISTERNA VERTICAL',
+		'Description1':'Vertical\n450Lts',
+		'Description2':'Capasidad: 450Lts\n\nVertical',
+	},
+	{
+		'Image':'cisterna600.img',
+		'Title':'CISTERNA VERTICAL',
+		'Description1':'Vertical\n600Lts',
+		'Description2':'Capasidad: 600Lts\n\nVertical',
+	},
+	{
+		'Image':'cisterna750.img',
+		'Title':'CISTERNA VERTICAL',
+		'Description1':'Vertical\n750Lts',
+		'Description2':'Capasidad: 750Lts\n\nVertical',
+	},
+	{
+		'Image':'cisterna1200.img',
+		'Title':'CISTERNA VERTICAL',
+		'Description1':'Vertical\n1,200Lts',
+		'Description2':'Capasidad: 1,200Lts\n\nVertical',
+	},
+	{
+		'Image':'cisterna2500.img',
+		'Title':'CISTERNA VERTICAL',
+		'Description1':'Vertical\n2,500Lts',
+		'Description2':'Capasidad: 2,500Lts\n\nVertical',
+	},
+	{
+		'Image':'cisterna3000.img',
+		'Title':'CISTERNA VERTICAL',
+		'Description1':'Vertical\n3,000Lts',
+		'Description2':'Capasidad: 3,000Lts\n\nVertical',
+	},
+	{
+		'Image':'cisterna5000.img',
+		'Title':'CISTERNA VERTICAL',
+		'Description1':'Vertical\n5,000Lts',
+		'Description2':'Capasidad: 5,000Lts\n\nVertical',
+	},
+	{
+		'Image':'cisterna7500.img',
+		'Title':'CISTERNA VERTICAL',
+		'Description1':'Vertical\n7,500Lts',
+		'Description2':'Capasidad: 7,500Lts\n\nVertical',
+	},
+	{
+		'Image':'cisterna10000.img',
+		'Title':'CISTERNA VERTICAL',
+		'Description1':'Vertical\n10,000Lts',
+		'Description2':'Capasidad: 10,000Lts\n\nVertical',
+	},
+	{
+		'Image':'cisterna15000.img',
+		'Title':'CISTERNA VERTICAL',
+		'Description1':'Vertical\n15,000Lts',
+		'Description2':'Capasidad: 15,000Lts\n\nVertical',
+	},
+	{
+		'Image':'cisterna20000.img',
+		'Title':'CISTERNA VERTICAL',
+		'Description1':'Vertical\n20,000Lts',
+		'Description2':'Capasidad: 20,000Lts\n\nVertical',
+	}
+];
+
+
+List<Map<dynamic,dynamic>> Portafiltro =[
+	{
+		'Image':'portafiBB10.img',
+		'Title':'PORTAFILTRO BB',
+		'Description1':'10 pulgadas\nTransparente\BB',
+		'Description2':'Medida: 10 pulgadas\nTransparente\BB',
+	},
+	{
+		'Image':'portafiBB20.img',
+		'Title':'PORTAFILTRO BB',
+		'Description1':'20 pulgadas\nTransparente\BB',
+		'Description2':'Medida: 20 pulgadas\nTransparente\BB',
+	},
+	{
+		'Image':'portafiSLIM10.img',
+		'Title':'PORTAFILTRO SLIM',
+		'Description1':'10 pulgadas\nTransparente\SLIM',
+		'Description2':'Medida: 10 pulgadas\nTransparente\SLIM',
+	},
+	{
+		'Image':'portafiSLIM20.img',
+		'Title':'PORTAFILTRO SLIM',
+		'Description1':'20 pulgadas\nTransparente\SLIM',
+		'Description2':'Medida: 20 pulgadas\nTransparente\SLIM',
+	},
+	{
+		'Image':'portafiSLIM10AZUL.img',
+		'Title':'PORTAFILTRO SLIM AZUL',
+		'Description1':'20 pulgadas\nTransparente\SLIM\NCon Tapa Negra',
+		'Description2':'Medida: 20 pulgadas\nTransparente\SLIM\n\nColor: Azul\n\nTapa: Negra',
+	}
+];
+
   List<Map<dynamic,dynamic>> Cart=[];
 
 }

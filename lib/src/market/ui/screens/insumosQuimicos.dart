@@ -9,9 +9,10 @@ import 'package:flexypack/src/widgets/images.dart';
 import 'package:flexypack/src/market/model/addcart.dart';
 import 'package:provider/provider.dart';
 
-class GarrafonScreen extends StatefulWidget{
+
+class InsumosQuimicosScreen extends StatefulWidget{
   @override
-  State<StatefulWidget> createState() => _GarrafonScreenState();
+  State<StatefulWidget> createState() => _InsumosQuimicosScreenState();
     // TODO: implement createState
 }
 
@@ -19,7 +20,7 @@ class GarrafonScreen extends StatefulWidget{
 // dando un appbar que es la barra superior de la interfaz con sus respectivos valores y icoos
 //dandole un drawer conocido como menu de hamburguesa derecho que fue diseñado en la carpeta widgets de market para ser utilizado en mas ventanas
 
-class _GarrafonScreenState extends State<GarrafonScreen>{
+class _InsumosQuimicosScreenState extends State<InsumosQuimicosScreen>{
   Drawere _drawere = new Drawere();
   final ListWidgetsShop  _ListWidgetsShop = ListWidgetsShop();
 
@@ -47,11 +48,11 @@ class _GarrafonScreenState extends State<GarrafonScreen>{
           ),
         ],
         backgroundColor: Colors.green,
-        title: Text('Garrafon'),
+        title: Text('Insumos Quimicos'),
         centerTitle: true,
       ),
       body: GridView.builder(
-        itemCount: ListProducts().Garrafon.length,
+        itemCount: ListProducts().InsumosQuimicos.length,
         gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
           crossAxisCount: 2,
           crossAxisSpacing: 5,
@@ -79,18 +80,18 @@ class _GarrafonScreenState extends State<GarrafonScreen>{
 
                         top: Radius.circular(12))),
                       child: _ListWidgetsShop.imageHeader(
-                        image: imagesRoutes().imageGarrafon+ListProducts().Garrafon[index]['Image'].toString(),
+                        image: imagesRoutes().imageInsumosQuimicos+ListProducts().InsumosQuimicos[index]['Image'].toString(),
                         infoaction:(){
                           _ListWidgetsShop.dialogInfoadd(
                             context: context,
-                            image:imagesRoutes().imageGarrafon+ListProducts().Garrafon[index]['Image'].toString(),
-                            title: ListProducts().Garrafon[index]['Title'].toString(),
-                            description2: ListProducts().Garrafon[index]['Description2'].toString(),
+                            image:imagesRoutes().imageInsumosQuimicos+ListProducts().InsumosQuimicos[index]['Image'].toString(),
+                            title: ListProducts().InsumosQuimicos[index]['Title'].toString(),
+                            description2: ListProducts().InsumosQuimicos[index]['Description2'].toString(),
                             button: _ListWidgetsShop.addCart(action: (){
-                              cart.add(image: 'garrafon/'+ListProducts().Garrafon[index]['Image'].toString(), 
-                              title: ListProducts().Garrafon[index]['Title'].toString(), 
-                              description: ListProducts().Garrafon[index]['Description1'].toString(),
-                              description2: ListProducts().Garrafon[index]['Description2'].toString()
+                              cart.add(image: 'insumosquimicos/'+ListProducts().InsumosQuimicos[index]['Image'].toString(), 
+                              title: ListProducts().InsumosQuimicos[index]['Title'].toString(), 
+                              description: ListProducts().InsumosQuimicos[index]['Description1'].toString(),
+                              description2: ListProducts().InsumosQuimicos[index]['Description2'].toString()
                               );
                               }),
                             );
@@ -101,17 +102,17 @@ class _GarrafonScreenState extends State<GarrafonScreen>{
                 ),
                 Expanded(
                   child:_ListWidgetsShop.productInfo(
-                    title: ListProducts().Garrafon[index]['Title'].toString(),
-                    description: ListProducts().Garrafon[index]['Description1'].toString(),
+                    title: ListProducts().InsumosQuimicos[index]['Title'].toString(),
+                    description: ListProducts().InsumosQuimicos[index]['Description1'].toString(),
                   ),
                   ),
                   Expanded(
                     child:_ListWidgetsShop.addCart(
                       action: (){
-                        cart.add(image: 'garrafon/'+ListProducts().Garrafon[index]['Image'].toString(), 
-                        title: ListProducts().Garrafon[index]['Title'].toString(), 
-                        description: ListProducts().Garrafon[index]['Description1'].toString(),
-                        description2: ListProducts().Garrafon[index]['Description2'].toString()
+                        cart.add(image: 'insumosquimicos/'+ListProducts().InsumosQuimicos[index]['Image'].toString(), 
+                        title: ListProducts().InsumosQuimicos[index]['Title'].toString(), 
+                        description: ListProducts().InsumosQuimicos[index]['Description1'].toString(),
+                        description2: ListProducts().InsumosQuimicos[index]['Description2'].toString()
                         );
                       },
                     ), 

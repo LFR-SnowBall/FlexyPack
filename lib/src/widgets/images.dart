@@ -11,5 +11,15 @@ class imagesRoutes{
   String imageBolsadeAguayHielo = 'assets/images/bolsadeaguayhielo/';
   String imageMaquinaParaSellado = 'assets/images/maquinaparasellado/'; 
 
+  String imageInsumosVarios = 'assets/images/insumosvarios/';
+  String imageInsumosQuimicos = 'assets/images/insumosquimicos/';
+  String imageEnfriadores = 'assets/images/enfriadores/';
+  String imageEquipoContraccion = 'assets/images/equiposdecontraccion/';
+  String imageOzonos = 'assets/images/ozonos/';
+  String imageInsumosVariosMaquinaria = 'assets/images/insumosvariosmaquinaria/';
+  String imageFiltros = 'assets/images/filtros/';
+  String imageCisternas = 'assets/images/cisterna/';
+  String imagePortafiltro = 'assets/images/portafiltro/';
+  
 
 }

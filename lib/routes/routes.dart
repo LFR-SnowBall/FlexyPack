@@ -1,4 +1,13 @@
+import 'package:flexypack/src/market/ui/screens/Cisternas.dart';
+import 'package:flexypack/src/market/ui/screens/Filtros.dart';
+import 'package:flexypack/src/market/ui/screens/Portafiltro.dart';
 import 'package:flexypack/src/market/ui/screens/botella.dart';
+import 'package:flexypack/src/market/ui/screens/enfriadores.dart';
+import 'package:flexypack/src/market/ui/screens/equiposContraccion.dart';
+import 'package:flexypack/src/market/ui/screens/insumosQuimicos.dart';
+import 'package:flexypack/src/market/ui/screens/insumosVarios.dart';
+import 'package:flexypack/src/market/ui/screens/insumosVariosMaquinaria.dart';
+import 'package:flexypack/src/market/ui/screens/ozonos.dart';
 import 'package:flutter/material.dart';
 import 'package:flexypack/src/market/ui/screens/home.dart';
 import 'package:flexypack/src/market/ui/screens/garrafon.dart';
@@ -20,6 +29,33 @@ class Router{
         break;
       case 'botellas':
         return MaterialPageRoute(builder: (context)=>BotellaScreen());
+        break;
+      case 'insumosvarios':
+        return MaterialPageRoute(builder: (context)=>InsumosVariosScreen());
+        break;
+      case 'insumosquimicos':
+        return MaterialPageRoute(builder: (context)=>InsumosQuimicosScreen());
+        break;
+      case 'enfriadores':
+        return MaterialPageRoute(builder: (context)=>EnfriadoresScreen());
+        break;
+      case 'equipodecontraccion':
+        return MaterialPageRoute(builder: (context)=>EquiposContraccionScreen());
+        break;
+      case 'ozonos':
+        return MaterialPageRoute(builder: (context)=>OzonosScreen());
+        break;
+      case 'insumosvariosmaquinaria':
+        return MaterialPageRoute(builder: (context)=>InsumosVariosMaquinariaScreen());
+        break;
+      case 'filtros':
+        return MaterialPageRoute(builder: (context)=>FiltrosScreen());
+        break;
+      case 'cisternas':
+        return MaterialPageRoute(builder: (context)=>CisternasScreen());
+        break;
+      case 'portafiltros':
+        return MaterialPageRoute(builder: (context)=>PortafiltroScreen());
         break;
       default:
         return MaterialPageRoute(

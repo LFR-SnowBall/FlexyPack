@@ -2,14 +2,15 @@ class imagesRoutes{
   String logo = 'assets/images/logo/';
   String cartroute = 'assets/images/';
   String imageGarrafon = 'assets/images/garrafon/';
-  String imageTapa = 'assets/images/tapa/';
+  String imageTapa = 'assets/images/tapas/';
   String imageBotella = 'assets/images/botellas/';
-  String imageSello = 'assets/images/sello/';
-  String imageEtiqueta = 'assets/images/etiqueta/';
-  String imageCalcomania = 'assets/images/calcomania/';
-  String imageDivisiondeMetal = 'assets/images/divisiondemetal/';
-  String imageBolsadeAguayHielo = 'assets/images/bolsadeaguayhielo/';
-  String imageMaquinaParaSellado = 'assets/images/maquinaparasellado/'; 
+  String imageSello = 'assets/images/sellos/';
+  String imageEtiqueta = 'assets/images/etiquetas/';
+  String imageCalcomania = 'assets/images/calcomanias/';
+  String imageDivisiondeMetal = 'assets/images/divisiondemetales/';
+  String imageBolsadeAguayHielo = 'assets/images/bolsadehielo/';
+  String imageMaquinaParaSellado = 'assets/images/maquinaparasellado/';
+
 
   String imageInsumosVarios = 'assets/images/insumosvarios/';
   String imageInsumosQuimicos = 'assets/images/insumosquimicos/';

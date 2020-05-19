@@ -45,7 +45,8 @@ flutter:
     #rutas de imagenes
     - assets/images/logo/logo.png
     #1 Garrafon
-    - assets/images/garrafon/
+    - assets/images/garrafon/pet/
+    - assets/images/garrafon/pvc/
     #2 Botellas
     - assets/images/botellas/
     #3 Tapas

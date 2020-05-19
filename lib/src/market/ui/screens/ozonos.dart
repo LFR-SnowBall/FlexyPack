@@ -85,7 +85,7 @@ class _OzonosScreenState extends State<OzonosScreen>{
                             title: ListProducts().Ozonos[index]['Title'].toString(),
                             description2: ListProducts().Ozonos[index]['Description2'].toString(),
                             button: _ListWidgetsShop.addCart(action: (){
-                              cart.add(image: 'Ozonos/'+ListProducts().Ozonos[index]['Image'].toString(), 
+                              cart.add(image: 'ozonos/'+ListProducts().Ozonos[index]['Image'].toString(), 
                               title: ListProducts().Ozonos[index]['Title'].toString(), 
                               description: ListProducts().Ozonos[index]['Description1'].toString(),
                               description2: ListProducts().Ozonos[index]['Description2'].toString()
@@ -106,7 +106,7 @@ class _OzonosScreenState extends State<OzonosScreen>{
                   Expanded(
                     child:_ListWidgetsShop.addCart(
                       action: (){
-                        cart.add(image: 'Ozonos/'+ListProducts().Ozonos[index]['Image'].toString(), 
+                        cart.add(image: 'ozonos/'+ListProducts().Ozonos[index]['Image'].toString(), 
                         title: ListProducts().Ozonos[index]['Title'].toString(), 
                         description: ListProducts().Ozonos[index]['Description1'].toString(),
                         description2: ListProducts().Ozonos[index]['Description2'].toString()

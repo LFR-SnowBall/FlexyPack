@@ -93,7 +93,7 @@ class _ShoppingCartState extends State<ShoppingCart>{
                 Expanded(
                   child:_ListWidgetsShop.productInfo(
                     title: cart.cartProducts[index]['Title'].toString(),
-                    description: cart.cartProducts[index]['Description'].toString(),
+                    description: cart.cartProducts[index]['Description1'].toString(),
                   ),
                   ),
                   Expanded(

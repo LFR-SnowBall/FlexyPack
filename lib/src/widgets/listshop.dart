@@ -156,7 +156,7 @@ class ListWidgetsShop{
                     child: Text('$title',maxLines: 2,overflow: TextOverflow.ellipsis, style: TextStyle(fontSize: 18.0,),),
                     ),
                     subtitle: Padding(padding: EdgeInsets.symmetric(horizontal: 10.0,vertical: 5.0),
-                    child: Text('$description2',overflow: TextOverflow.ellipsis,style: TextStyle(fontSize: 16.0),),
+                    child: Text('$description2',overflow: TextOverflow.clip,style: TextStyle(fontSize: 16.0),),
                     ),
                 ),
             ],

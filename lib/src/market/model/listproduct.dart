@@ -82,19 +82,604 @@ class ListProducts{
       'Description2':"Material: Pvc.\n\nC/Valvula."
     }
   ];
-  List<Map<dynamic,dynamic>> TapaRosca =[
+  List<Map<dynamic,dynamic>> Tapas =[
+    {
+		'Image':'TAPA-C-28-LARGA.jpg',
+		'Title':'TAPA ROSCA',
+		'Description1':'ALTA',
+		'Description2':"Tamaño: C-28.\n\nBotella: Botella PM.\n\nTipo: Rosca, Alta.\n\nColores: Varios.\n\nVenta: Venta por Millar."
+	  },
+    {
+      'Image':'TAPA-DE-C-28-CORTA-compressor.jpg',
+      'Title':'TAPA ROSCA',
+      'Description1':'CORTA',
+      'Description2':"Tamaño: C-28.\n\nBotella: Twis.\n\nTipo: Rosca, Corta.\n\nColores: Varios.\n\nVenta: Venta por Millar."
+    },
+    {
+      'Image':'TAPA-ROSCA-C-24.jpg',
+      'Title':'TAPA ROSCA',
+      'Description1':'FLIP TOP',
+      'Description2':"Tamaño: C-24.\n\nTipo: Rosca Dosificadora, (Flip Top).\n\nColores: Varios.\n\nVenta: Venta Unitaria."
+    },
+    {
+      'Image':'TAPA-SPORT-CAP-R-28-AZUL.jpg',
+      'Title':'TAPA ROSCA',
+      'Description1':'SPORT CAP',
+      'Description2':"Tamaño: R-28.\n\nTipo: Rosca Sport, Cap.\n\nColores: Azul cielo, Azul pitufo.\n\nVenta: Venta por Millar."
+    },
+    {
+      'Image':'TAPA-FLIP-C-28-TOP.jpg',
+      'Title':'TAPA ROSCA',
+      'Description1':'FLIP TOP ALTA',
+      'Description2':"Tamaño: C-28.\n\nTipo: Rosca, (Flip Top), Alta.\n\nColores: Varios.\n\nVenta: Venta Unitaria."
+    },
+    {
+      'Image':'TAPAS-TR-52-CIEL-Y-VICTORIA.jpg',
+      'Title':'TAPA ROSCA',
+      'Description1':'CIEL Y VICTORIA',
+      'Description2':"Tamaño: TR-52.\n\nTipo: Rosca, Ciel, Victoria.\n\nColores: Azul.\n\nVenta: Venta por Millar."
+    },
+    {
+      'Image':'TAPA-ROSCA-TR-53-PM-SANTORINI-compressor.jpg',
+      'Title':'TAPA ROSCA',
+      'Description1':'SANTORINI, BONAFON',
+      'Description2':"Tamaño: TR-53.\n\nTipo: Rosca, PM Santorini, Bonafon.\n\nColores: Azul.\n\nVenta: Por Millar."
+    },
+    {
+      'Image':'TAPA-ROSCA-TR-53-PM-SANTORINI-compressor.jpg',
+      'Title':'TAPA ROSCA',
+      'Description1':'SANTORINI',
+      'Description2':"Tamaño: TR-53.\n\nTipo: Rosca, GDL Santorini.\n\nColores: Azul.\n\nVenta: Venta por Millar."
+    },
+    {
+      'Image':'TAPA-ROSCA-TR-53-GDL-CON-LINNER.jpg',
+      'Title':'TAPA ROSCA',
+      'Description1':'SANTORINI',
+      'Description2':"Tamaño: TR-53.\n\nTipo: Rosca, GDL Santorini.\n\nC/Linner.\n\nColores: Azul aqua.\n\nVenta: Venta por Millar."
+    },
+    {
+      'Image':'TAPA-ROSCA-TR-53-PM-CON-CINTILLO-Y-LNNER-compressor.jpg',
+      'Title':'TAPA ROSCA',
+      'Description1':'SANTORINI, BONAFON',
+      'Description2':"Tamaño: TR-53.\n\nTipo: Rosca, PM Santorini, Bonafon.\n\nC/Linner y Cintillo.\n\nColores: Azul.\n\nVenta: Venta por Millar."
+    },
+    {
+      'Image':'TAPA-ROSCA-TR-54-CON-CINTILLO-compressor.jpg',
+      'Title':'TAPA ROSCA',
+      'Description1':'TR-54',
+      'Description2':"Tamaño: TR-54.\n\nTipo: Rosca.\n\nC/Cintillo\n\nColores: Azul.\n\nVenta: Venta por Millar."
+    },
+    {
+      'Image':'TAPA-ROSCA-TR-54-SIN-CINTILLO-compressor.jpg',
+      'Title':'TAPA ROSCA',
+      'Description1':'TR-54',
+      'Description2':"Tamaño: TR-54.\n\nTipo: Rosca.\n\nColores: Azul\n\nVenta: Venta por Millar."
+    },
+    {
+      'Image':'TAPA-ROSCA-TR-55-VALDO-compressor.jpg',
+      'Title':'TAPA ROSCA',
+      'Description1':'VALDO',
+      'Description2':"Tamaño: TR-55.\n\nTipo: Rosca, Valdo.\n\nColores: Azul.\n\nVenta: Venta por Millar."
+    },
+    {
+      'Image':'TAPA-ROSCA-TR-56-ELECTROPURA-compressor.jpg',
+      'Title':'TAPA ROSCA',
+      'Description1':'ELECTROPURA',
+      'Description2':"Tamaño: TR-56.\n\nTipo: Rosca, Electropura.\n\nColores: Azul cielo.\n\nVenta: Venta por Millar."
+    },
+    {
+      'Image':'TAPA-ROSCA-TR-57-CRISTAL-NUEVA-compressor.jpg',
+      'Title':'TAPA ROSCA',
+      'Description1':'CRISTAL NUEVA CORTA',
+      'Description2':"Tamaño: TR-57.\n\nTipo: Rosca, Cristal Nueva, (Corta).\n\nColores: Azul cielo.\n\nVenta: Venta por Millar."
+    },
+    {
+      'Image':'TAPA-ROSCA-TR-58-GDL-BLANCA-compressor.jpg',
+      'Title':'TAPA ROSCA',
+      'Description1':'TR-58',
+      'Description2':"Tamaño: TR-58.\n\nTipo: Rosca, GDL.\n\nColores: Blanca.\n\nVenta: Venta por Millar."
+    },
+    {
+      'Image':'TAPA-ROSCA-TR-58-(CORTA)-compressor.jpg',
+      'Title':'TAPA ROSCA',
+      'Description1':'TR-58 CORTA',
+      'Description2':"Tamaño: TR-58.\n\nTipo: Rosca, GDL, (Corta).\n\nColores: Azul cielo.\n\nVenta: Venta por Millar."
+    },
+    {
+      'Image':'TAPA-ROSCA-C-63-SPORT-compressor.jpg',
+      'Title':'TAPA ROSCA',
+      'Description1':'SPORT',
+      'Description2':"Tamaño: C-63.\n\nTipo: Rosca, Sport.\n\nC/Chupón\n\nColores: Varios.\n\nVenta: Venta por Millar."
+    },
+    {
+      'Image':'TAPA-ROSCA-C-63-compressor.jpg',
+      'Title':'TAPA ROSCA',
+      'Description1':'C-63',
+      'Description2':"Tamaño: C-63.\n\nTipo: Rosca.\n\nColores: Blanca.\n\nVenta: Venta por Millar."
+    },
+    {
+      'Image':'TAPA-DE-PRESION-ULTRA-compressor.jpg',
+      'Title':'TAPA DE PRESIÓN',
+      'Description1':'ULTRA',
+      'Description2':"Tipo: Presión, Ultra.\n\nColores: Varios.\n\nVenta: Venta por Millar, (2,000 PZ)."
+    },
+    {
+      'Image':'TAPA-PM-compressor.jpg',
+      'Title':'TAPA DE PRESIÓN',
+      'Description1':'PM',
+      'Description2':"Tipo: Presión, PM.\n\nColores: Varios.\n\nVenta: Venta por Millar, (2,000 PZ)."
+    },
+    {
+      'Image':'TAPA-PEQUE-compressor.jpg',
+      'Title':'TAPA DE PRESIÓN',
+      'Description1':'PEQUE',
+      'Description2':"Tipo: Presión, Peque.\n\nColores: Varios.\n\nVenta: Venta por Millar, (2,000 PZ)."
+    },
+    {
+      'Image':'TAPA-MDI-compressor.jpg',
+      'Title':'TAPA DE PRESIÓN',
+      'Description1':'MIDI',
+      'Description2':"Tipo: Presión, Midi.\n\nColores: Varios.\n\nVenta: Venta por Millar, (2,000 PZ)."
+    },
+    {
+      'Image':'TAPA-FALDON-compressor.jpg',
+      'Title':'TAPA DE PRESIÓN',
+      'Description1':'FALDÓN',
+      'Description2':"Tipo: Presión, Faldón.\n\nColores: Azul.\n\nVenta: Venta por Millar, (2,000 PZ)."
+    },
+    {
+      'Image':'TAPA-CHUPON-compressor.jpg',
+      'Title':'TAPA DE PRESIÓN',
+      'Description1':'CHUPÓN',
+      'Description2':"Tipo: Presión, Chupón.\n\nColores: Amarillo.\n\nVenta: Venta por Millar, (1,250 PZ)."
+    }
 
   ];
   List<Map<dynamic,dynamic>> Botella =[
     {
-      'Image':'alcolehera/ALCOHOLERA-DE-1000-M.jpg',
-      'Title':'ENVASE ALCOHOLERO DE POLIETILENO 1000 ML',
-      'Description1':'C/TAPA',
-      'Description2':''
+		'Image':'PM-500-ML.jpg',
+		'Title':'BOTELLA PM',
+		'Description1':'500 ML',
+		'Description2':"Capacidad: 500 ml.\n\nTipo: PM.\n\nColores: Varios.\n\nVenta: 190 PZ (C/Tapa o S/Tapa)."
+    },
+    {
+      'Image':'PM-1000-ML.jpg',
+      'Title':'BOTELLA PM',
+      'Description1':'1000 ML',
+      'Description2':"Capacidad: 1000 ml.\n\nTipo: PM.\n\nColores: Varios.\n\nVenta: 133 PZ (C/Tapa o S/Tapa)."
+    },
+    {
+      'Image':'PM-1500-ML.jpg',
+      'Title':'BOTELLA PM',
+      'Description1':'1500 ML',
+      'Description2':"Capacidad: 1500 ml.\n\nTipo: PM.\n\nColores: Varios.\n\nVenta: 90 PZ (C/Tapa o S/Tapa)."
+    },
+    {
+      'Image':'TARRO-180-ML-compressor.jpg',
+      'Title':'TARRO HEX',
+      'Description1':'180 ML',
+      'Description2':"Capacidad: 180 ml.\n\nTipo: HEX.\n\nColores: Transparente.\n\nVenta: 96 PZ (C/Tapa), Unitaria (C/Tapa)."
+    },
+    {
+      'Image':'TARRO-280-ML-compressor.jpg',
+      'Title':'TARRO HEX',
+      'Description1':'280 ML',
+      'Description2':"Capacidad: 280 ml.\n\nTipo: HEX.\n\nColores: Transparente.\n\nVenta: 72 PZ (C/Tapa), Unitaria (C/Tapa)."
+    },
+    {
+      'Image':'botellas-twis-250-ml.jpg',
+      'Title':'BOTELLA TWIS',
+      'Description1':'250 ML',
+      'Description2':"Capacidad: 250 ml.\n\nTipo: Twis.\n\nVenta: 190 PZ (C/Tapa o S/Tapa)."
+    },
+    {
+      'Image':'botellas-twis-355-ml.jpg',
+      'Title':'BOTELLA TWIS',
+      'Description1':'355 ML',
+      'Description2':"Capacidad: 355 ml.\n\nTipo: Twis.\n\nVenta: 216 PZ (C/Tapa o S/Tapa)."
+    },
+    {
+      'Image':'botellas-twis-500-ml.jpg',
+      'Title':'BOTELLA TWIS',
+      'Description1':'500 ML',
+      'Description2':"Capacidad: 500 ml.\n\nTipo: Twis.\n\nColores: Varios.\n\nVenta: 145 PZ (C/Tapa o S/Tapa)."
+    },
+    {
+      'Image':'botellas-twis-600-ml.jpg',
+      'Title':'BOTELLA TWIS',
+      'Description1':'600 ML',
+      'Description2':"Capacidad: 600 ml.\n\nTipo: Twis.\n\nColores: Varios.\n\nVenta: 135 PZ (C/Tapa o S/Tapa)."
+    },
+    {
+      'Image':'botellas-twis-1000-ml.jpg',
+      'Title':'BOTELLA TWIS',
+      'Description1':'1000 ML',
+      'Description2':"Capacidad: 1000 ml.\n\nTipo: Twis.\n\nColores: Varios.\n\nVenta: 92 PZ (C/Tapa o S/Tapa)."
+    },
+    {
+      'Image':'botella-twis-1500-ml.jpg',
+      'Title':'BOTELLA TWIS',
+      'Description1':'1500 ML',
+      'Description2':"Capacidad: 1500 ml.\n\nTipo: Twis.\n\nColores: Varios.\n\nVenta: 70 PZ (C/Tapa o S/Tapa)."
+    },
+    {
+      'Image':'PETALOIDE-500-ML.jpg',
+      'Title':'BOTELLA PETALOIDE',
+      'Description1':'500 ML',
+      'Description2':"Capacidad: 500 ml.\n\nTipo: Petaloide.\n\nVenta: 150 PZ (C/Tapa o S/Tapa)."
+    },
+    {
+      'Image':'botella-boston-355-LT.jpg',
+      'Title':'BOTELLA BOSTON',
+      'Description1':'355 ML',
+      'Description2':"Capacidad: 355 ml.\n\nTipo: Boston.\n\nVenta: 315 PZ (C/Tapa o S/Tapa)."
+    },
+    {
+      'Image':'botella-boston-500-LT.jpg',
+      'Title':'BOTELLA BOSTON',
+      'Description1':'500 ML',
+      'Description2':"Capacidad: 500 ml.\n\nTipo: Boston.\n\nVenta: 144 PZ (C/Tapa o S/Tapa)."
+    },
+    {
+      'Image':'botella-boston-600-LT-.jpg',
+      'Title':'BOTELLA BOSTON',
+      'Description1':'600 ML',
+      'Description2':"Capacidad: 600 ml.\n\nTipo: Boston.\n\nVenta: 170 PZ (C/Tapa o S/Tapa)."
+    },
+    {
+      'Image':'botella-boston-1000-LT.jpg',
+      'Title':'BOTELLA BOSTON',
+      'Description1':'1000 ML',
+      'Description2':"Capacidad: 1000 ml.\n\nTipo: Boston.\n\nVenta: 98 PZ (C/Tapa o S/Tapa)."
+    },
+    {
+      'Image':'VOSS-500-ML.jpg',
+      'Title':'BOTELLA VOSS',
+      'Description1':'500 ML',
+      'Description2':"Capacidad: 500 ml.\n\nTipo: VOSS.\n\nVenta: 210 PZ (C/Tapa o S/Tapa)."
+    },
+    {
+      'Image':'VOSS-355-ML.jpg',
+      'Title':'BOTELLA VOSS',
+      'Description1':'355 ML',
+      'Description2':"Capacidad: 355 ml.\n\nTipo: VOSS.\n\nVenta: 264 PZ (C/Tapa o S/Tapa)."
+    },
+    {
+      'Image':'THOR-DE-500-ML-compressor.jpg',
+      'Title':'BOTELLA THOR',
+      'Description1':'500 ML',
+      'Description2':"Material: Cristal.\n\nCapacidad: 500 ml.\n\nTipo: THOR.\n\nC/Tapa(Oro).\n\nVenta: 12 PZ."
+    },
+    {
+      'Image':'TEQUILERA-REDONDA-compressor.jpg',
+      'Title':'TEQUILERA REDONDA',
+      'Description1':'250 ML',
+      'Description2':"Material: Cristal.\n\nCapacidad: 250 ml.\n\nTipo: REDONDA.\n\nC/Tritapa(Oro).n\nVenta: 24 PZ."
+    },
+    {
+      'Image':'BOTELLA-FESTIVAL.jpg',
+      'Title':'BOTELLA FESTIVAL',
+      'Description1':'750 ML',
+      'Description2':"Material: Cristal.\n\nCapacidad: 750 ml.\n\nTipo: FESTIVAL.\n\nC/Tapa.\n\nVenta: 12 PZ."
+    },
+    {
+      'Image':'BOTELLA-BRANDY.jpg',
+      'Title':'BOTELLA BRANDY',
+      'Description1':'950 ML',
+      'Description2':"Material: Cristal.\n\nCapacidad: 950 ml.\n\nTipo: BRANDY.\n\nC/Tapa.\n\nVenta: 12 PZ."
+    },
+    {
+      'Image':'GARRAFA-DE-CRISTAL-4-LT-compressor.jpg',
+      'Title':'GARRAFA',
+      'Description1':'4 LTS',
+      'Description2':"Material: Cristal.\n\nCapacidad: 4 lts.\n\nC/Tapa.\n\nVenta: 2 PZ."
+    },
+    {
+      'Image':'BOTELLA-HABANERA.jpg',
+      'Title':'BOTELLA  HABANERA',
+      'Description1':'150 ML',
+      'Description2':"Capacidad: 150 ml.\n\nTipo: HABANERA.\n\nC/Tapa C-24(Flip Top).\n\nVenta: 390 PZ."
+    },
+    {
+      'Image':'ESPECIERO-compressor.jpg',
+      'Title':'ESPECIERO GEN',
+      'Description1':'125 GRS',
+      'Description2':"Capacidad: 125 grs.\n\nTipo: GEN.\n\nC/Tapa.\n\nVenta: 350 PZ."
+    },
+    {
+      'Image':'BOTELLA-SALSERA.jpg',
+      'Title':'SALSERA GEN',
+      'Description1':'180 ML',
+      'Description2':"Capacidad: 180 ml.\n\nTipo: GEN.\n\nC/Tapa.\n\nVenta: 12 PZ."
+    },
+    {
+      'Image':'BOTELLA-OVAL.jpg',
+      'Title':'BOTELLA OVAL',
+      'Description1':'125 ML',
+      'Description2':"Capacidad: 125 ml.\n\nTipo: PET, OVAL.\n\nC/Tapa C-24.\n\nVenta: 400 PZ."
+    },
+    {
+      'Image':'garrafa-de-05-Litros.jpg',
+      'Title':'GARRAFA',
+      'Description1':'5 LTS',
+      'Description2':"Capacidad: 5 lts.\n\nTipo: PET.\n\nC/Tapa, C/Asa.\n\nVenta: 50 PZ."
+    },
+    {
+      'Image':'garrafa-de-10-Litros.jpg',
+      'Title':'GARRAFA',
+      'Description1':'10 LTS',
+      'Description2':"Capacidad: 10 lts.\n\nTipo: PET.\n\nC/Tapa, C/Asa.\n\nVenta: 30 PZ."
+    },
+    {
+      'Image':'pina-960-ml.jpg',
+      'Title':'GARRAFA PIÑA',
+      'Description1':'960 ML',
+      'Description2':"Capacidad: 960 ml.\n\nTipo:  PET, PIÑA.\n\nC/Tapa, C/Asa.\n\nVenta: 61 PZ."
+    },
+    {
+      'Image':'PLANTILLA-PAGINA.jpg',
+      'Title':'GARRAFA PIÑA',
+      'Description1':'440 ML',
+      'Description2':"Capacidad: 440 ml.\n\nTipo: PET, PIÑA.\n\nC/Tapa, C/Asa.\n\nVenta: 136 PZ."
+    },
+    {
+      'Image':'WISKERA-1000-ML.jpg',
+      'Title':'WISKERA',
+      'Description1':'1000 ML',
+      'Description2':"Capacidad: 1000 ml.\n\nTipo: PET.\n\nC/Tapa.\n\nVenta: 112 PZ."
+    },
+    {
+      'Image':'WISKERA-500-ML.jpg',
+      'Title':'WISKERA',
+      'Description1':'500 ML',
+      'Description2':"Capacidad: 500 ml.\n\nTipo: PET.\n\nC/Tapa.\n\nVenta: 165 PZ."
+    },
+    {
+      'Image':'BOTELLA-AGRO.jpg',
+      'Title':'BOTELLA AGRO',
+      'Description1':'1000 ML',
+      'Description2':"Capacidad: 1000 ml.\n\nTipo: PET, AGRO.\n\nC/Tapa.\n\nVenta: 71 PZ."
+    },
+    {
+      'Image':'SQUEEZABLE-250-ML.jpg',
+      'Title':'BOTELLA SQUEZZABLE',
+      'Description1':'250 ML',
+      'Description2':"Capacidad: 250 ml.\n\nTipo: PET, SQUEZZABLE.\n\nC/Tapa.\n\nVenta: 246 PZ."
+    },
+    {
+      'Image':'SQUEEZABLE-500-ML.jpg',
+      'Title':'BOTELLA SQUEZZABLE',
+      'Description1':'500 ML',
+      'Description2':"Capacidad: 500 ml.\n\nTipo: PET, SQUEZZABLE.\n\nC/Tapa.\n\nVenta: 110 PZ."
+    },
+    {
+      'Image':'ENVASE-DE-ACOHOL-DE-250-ML.jpg',
+      'Title':'ENVASE ALCOHOLERO',
+      'Description1':'250 ML',
+      'Description2':"Material: Polietileno.\n\nCapacidad: 250 ml.\n\n Tipo: ALCOHOLERO.\n\nC/Tapa.\n\nVenta: 330 PZ."
+    },
+    {
+      'Image':'ENVASE-DE-ALCOHOL-500-ML.jpg',
+      'Title':'ENVASE ALCOHOLERO',
+      'Description1':'500 ML',
+      'Description2':"Material: Polietileno.\n\nCapacidad: 500 ml.\n\nTipo: ALCOHOLERO.\n\nC/Tapa.\n\nVenta: 187 PZ."
+    },
+    {
+      'Image':'ALCOHOLERA-DE-1000-M.jpg',
+      'Title':'ENVASE ALCOHOLERO',
+      'Description1':'1000 ML',
+      'Description2':"Material: Polietileno.\n\nCapacidad: 1000 ml.\n\n Tipo: ALCOHOLERO.\n\nC/Tapa.\n\nVenta: 113 PZ."
+    },
+    {
+      'Image':'TARRO--250-ML-compressor.jpg',
+      'Title':'TARRO',
+      'Description1':'250 ML',
+      'Description2':"Capacidad: 250 ml.\n\nTipo: PET.\n\nVenta: 100 PZ (C/Tapa o S/Tapa)."
+    },
+    {
+      'Image':'TARRO-DE-PET-500-ML-compressor.jpg',
+      'Title':'TARRO',
+      'Description1':'500 ML',
+      'Description2':"Capacidad: 500 ml.\n\nTipo: PET.\n\nVenta: 100 PZ (C/Tapa o S/Tapa)."
+    },
+    {
+      'Image':'TARRO-1000-ML-(2)-compressor.jpg',
+      'Title':'TARRO',
+      'Description1':'750 ML',
+      'Description2':"Capacidad: 750 ml.\n\nTipo: PET.\n\nVenta: 100 PZ (C/Tapa o S/Tapa)."
+    },
+    {
+      'Image':'TARRO-1000-ML-(1)-compressor.jpg',
+      'Title':'TARRO',
+      'Description1':'1000 ML',
+      'Description2':"Capacidad: 1000 ml.\n\nTipo: PET.\n\nVenta: 100 PZ (C/Tapa o S/Tapa)."
+    },
+    {
+      'Image':'ENVASE-PROMOCIONAL-Y-ESPECIERO.jpg',
+      'Title':'ENVASE PROMOCIONAL',
+      'Description1':'750 ML',
+      'Description2':"Capacidad: 750 ml.\n\nTipo: PROMOCIONAL.\n\nColores: Varios.\n\nVenta: Unitaria."
     }
   ];
-  
+  List<Map<dynamic,dynamic>> Sellos =[
+    {
+		'Image':'100X70mm-1-tinta-compressor.jpg',
+		'Title':'SELLO DE GARANTIA',
+		'Description1':'1 TINTA 100X70 MM',
+		'Description2':"Medida: 100x70 mm.\n\n1 Tinta.\n\nColores: Varios.\n\nVenta: Por Millar"
+    },
+    {
+      'Image':'100X70mm-2-tintas-compressor.jpg',
+      'Title':'SELLO DE GARANTIA',
+      'Description1':'2 TINTAS 100X70 MM',
+      'Description2':"Medida: 100x70 mm.\n\n2 Tintas.\n\nColores: Varios.\n\nVenta: Por Millar"
+    },
+    {
+      'Image':'100X70mm-3-tintas-compressor.jpg',
+      'Title':'SELLO DE GARANTIA',
+      'Description1':'3 TINTAS 100X70 MM',
+      'Description2':"Medida: 100x70 mm.\n\n3 Tinta.\n\nColores: Varios.\n\nVenta: Por Millar"
+    },
+    {
+      'Image':'sello-preformado-compressor.jpg',
+      'Title':'SELLO PREFORMADO',
+      'Description1':'128X28 MM',
+      'Description2':"Medida: 128x28 mm."
+    },
+    {
+      'Image':'sello-preformado-compressor.jpg',
+      'Title':'SELLO PREFORMADO',
+      'Description1':'196X40 MM',
+      'Description2':"Medida: 196x40 mm."
+    }
+  ];
+  List<Map<dynamic,dynamic>> Etiquetas =[
+    {
+		'Image':'ETIQUETA-BOTELLA-1-LT-compressor.jpg',
+		'Title':'ETIQUETA PARA BOTELLA',
+		'Description1':'1,000 ML',
+		'Description2':"Material: Couché Laminado.\n\nCapacidad marcada: 1,000 ml.\n\nMedida: 5.2x21 cm."
+    },
+    {
+      'Image':'ETIQUETA-BOTELLA-355-ML-compressor.jpg',
+      'Title':'ETIQUETA PARA BOTELLA',
+      'Description1':'355 ML',
+      'Description2':"Material: Couché Laminado.\n\nCapacidad marcada: 355 ml.\n\nMedida: 3.5x19.7 cm."
 
+    },
+    {
+      'Image':'ETIQUETA-BOTELLA-500-ML-compressor.jpg',
+      'Title':'ETIQUETA PARA BOTELLA',
+      'Description1':'500 ML',
+      'Description2':"Material: Couché Laminado.\n\nCapacidad marcada: 500 ml.\n\nMedida: 4.3x18 cm."
+
+    },
+    {
+      'Image':'etiqueta-para-garrafon-compressor.jpg',
+      'Title':'ETIQUETA PARA GARRAFÓN',
+      'Description1':'19 y 20 LTS',
+      'Description2':"Material: Couché Laminado, BOPP.\n\nCapacidad marcada: 19 Y 20 lts.\n\nMedida: 7x27 cm."
+
+    }
+  ];
+  List<Map<dynamic,dynamic>> Calcomanias =[
+    {
+		'Image':'calca-vinil-exhibidor-10-cav.jpg',
+		'Title':'CALCOMANÍA PARA EXHIBIDOR',
+		'Description1':'EN VINIL, 5 CAVIDADES',
+		'Description2':"Material: Vinil.\n\n5 Cavidades.\n\nMedida: 18x28 cm."
+    },
+    {
+      'Image':'calca-vinil-exhibidor-10-cav.jpg',
+      'Title':'CALCOMANÍA PARA EXHIBIDOR',
+      'Description1':'EN VINIL, 10 CAVIDADES',
+      'Description2':"Material: Vinil.\n\n10 Cavidades.\n\nMedida: 18x58 cm."
+    },
+    {
+      'Image':'CALCOMANiA-EN VINIL-par-puertas-de-camioneta.jpg',
+      'Title':'CALCOMANÍA PARA CAMIONETA',
+      'Description1':'EN VINIL, 2 PUERTAS',
+      'Description2':"Material: Vinil.\n\n2 Puertas.\n\nMedida: 50x50 cm."
+    }
+  ];
+  List<Map<dynamic,dynamic>>DivisiondeMetales=[
+    {
+		'Image':'RACK-40-CAVIDADES-1.jpg',
+		'Title':'RACK',
+		'Description1':'40 CAVIDADES',
+		'Description2':"P/Monta Carga.\n\n40 Cavidades."
+    },
+    {
+      'Image':'RACK-30-CAVIDADES-3.jpg',
+      'Title':'RACK',
+      'Description1':'30 CAVIDADES',
+      'Description2':"P/Monta Carga.\n\n30 Cavidades."
+    },
+    {
+      'Image':'RACK-30-CAVIDADES-FIJO-4.jpg',
+      'Title':'RACK',
+      'Description1':'30 CAVIDADES, FIJO',
+      'Description2':"Fijo.\n\n30 Cavidades."
+    },
+    {
+      'Image':'5-CAVIDADES-5.jpg',
+      'Title':'EXHIBIDOR',
+      'Description1':'5 CAVIDADES',
+      'Description2':"5 Cavidades."
+    },
+    {
+      'Image':'10-cav-6.jpg',
+      'Title':'EXHIBIDOR',
+      'Description1':'10 CAVIDADES',
+      'Description2':"10 Cavidades."
+    },
+    {
+      'Image':'carroceria-sin-cortinillas.jpg',
+      'Title':'CARROCERÍAS PARA NISSAN LARGA',
+      'Description1':'63 CAVIDADES',
+      'Description2':"Sin Cortinas.\n\n63 Cavidades."
+    },
+    {
+      'Image':'con-cortinillas.jpg',
+      'Title':'CARROCERÍAS PARA NISSAN LARGA',
+      'Description1':'63 CAVIDADES',
+      'Description2':"C/Cortinas.\n\n63 Cavidades."
+    },
+    {
+      'Image':'20-cavi-7.jpg',
+      'Title':'EXHIBIDOR',
+      'Description1':'20 CAVIDADES',
+      'Description2':"C/Protección.\n\n20 Cavidades."
+    },
+    {
+      'Image':'COLUMPIO-9.jpg',
+      'Title':'COLUMPIO TRIPLE',
+      'Description1':'...',
+      'Description2':"..."
+    },
+    {
+      'Image':'CON-PUERTA-8.jpg',
+      'Title':'EXHIBIDOR',
+      'Description1':'10 CAVIDADES',
+      'Description2':"C/Protección.\n\n10 Cavidades."
+    },
+    {
+      'Image':'exhibidor-20-ca-con-copete.jpg',
+      'Title':'EXHIBIDOR DE PLASTICO',
+      'Description1':'10 CAVIDADES',
+      'Description2':"C/Copete.\n\n10 Cavidades"
+    }
+  ];
+  List<Map<dynamic,dynamic>> BolsadeAguayHielo =[
+    {
+		'Image':'bolsa-de-hielo-30X61-CM-5-KG.jpg',
+		'Title':'BOLSA DE POLIETILENO PARA HIELO TRANS',
+		'Description1':'5 KG',
+		'Description2':"Material: Polietileno.\n\nPeso: 5 kg.\n\nMedida: 30x61 cm."
+    },
+    {
+      'Image':'30X64-CM-5-KG.jpg',
+      'Title':'BOLSA DE POLIETILENO PARA HIELO AZUL',
+      'Description1':'5 KG',
+      'Description2':"Material: Polietileno.\n\nPeso: 5 kg.\n\nMedida: 30x64 cm."
+    },
+    {
+      'Image':'bolsa-de-agua-2-TINTA.jpg',
+      'Title':'BOLSA DE POLIETILENO PARA AGUA',
+      'Description1':'2 TINTAS',
+      'Description2':"Material: Polietileno.\n\n2 Tintas"
+    },
+    {
+      'Image':'bolsa-de-agua-1-TINTA.jpg',
+      'Title':'BOLSA DE POLIETILENO PARA AGUA',
+      'Description1':'1 TINTA',
+      'Description2':"Material: Polietileno.\n\n1 Tinta"
+    }
+  ];
+  List<Map<dynamic,dynamic>> MaquinasparaSellado =[
+
+    
+  ];
   List<Map<dynamic,dynamic>> InsumosVarios =[
     {
 		'Image':'almTrab.jpg',

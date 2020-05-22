@@ -677,8 +677,66 @@ class ListProducts{
     }
   ];
   List<Map<dynamic,dynamic>> MaquinasparaSellado =[
-
-    
+    {
+		'Image':'PLANTILLA-PAGINA.jpg',
+		'Title':'MÁQUINA SELLADORA MANUAL',
+		'Descriptio1':'',
+		'Descriptio2':""
+    },
+    {
+      'Image':'sellador-manual-con-muleta.jpg',
+      'Title':'SELLADOR MANUAL CON MULETA',
+      'Descriptio1':'',
+      'Descriptio2':""
+    },
+    {
+      'Image':'TELA-TEFLON.jpg',
+      'Title':'TELA TEFLÓN',
+      'Descriptio1':'22X100 CM',
+      'Descriptio2':"Medida: 22X100 cm"
+    },
+    {
+      'Image':'alambre.jpg',
+      'Title':'ALAMBRE CORTE',
+      'Descriptio1':'(No. 24X100 CM)',
+      'Descriptio2':"Medida: No. 24X100 cm"
+    },
+    {
+      'Image':'silicon-flexible.jpg',
+      'Title':'SILICÓN FLEXIBLE',
+      'Descriptio1':'1 METRO',
+      'Descriptio2':"Medida: 1 Metro.\n\nColor: Blaco."
+    },
+    {
+      'Image':'resistencia-35.jpg',
+      'Title':'RESISTENCIA',
+      'Descriptio1':'35 CM',
+      'Descriptio2':"Medida: 35 cm."
+    },
+    {
+      'Image':'resistencia-25.jpg',
+      'Title':'RESISTENCIA',
+      'Descriptio1':'25 CM',
+      'Descriptio2':"Medida: 25 cm."
+    },
+    {
+      'Image':'vaquelita.jpg',
+      'Title':'BAQUELITA',
+      'Descriptio1':'',
+      'Descriptio2':""
+    },
+    {
+      'Image':'tarjeta.jpg',
+      'Title':'TARJETA ELECTRÓNICA',
+      'Descriptio1':'',
+      'Descriptio2':""
+    },
+    {
+      'Image':'asfalto.jpg',
+      'Title':'ASBESTO',
+      'Descriptio1':'(TIRA)',
+      'Descriptio2':"Cantidad: Tira."
+    }
   ];
   List<Map<dynamic,dynamic>> InsumosVarios =[
     {

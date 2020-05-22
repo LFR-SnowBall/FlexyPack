@@ -9,15 +9,17 @@ import 'package:flexypack/src/widgets/images.dart';
 import 'package:flexypack/src/market/model/addcart.dart';
 import 'package:provider/provider.dart';
 
-
-class CisternasScreen extends StatefulWidget{
+class BolsadeAguayHieloScreen extends StatefulWidget{
   @override
-  State<StatefulWidget> createState() => _CisternasScreenState();
+  State<StatefulWidget> createState() => _BolsadeAguayHieloScreenState();
     // TODO: implement createState
 }
 
+//se implementa la interfaz empezando con un scaffold que es la inicialización de la misma continuando con los valores del widget
+// dando un appbar que es la barra superior de la interfaz con sus respectivos valores y icoos
+//dandole un drawer conocido como menu de hamburguesa derecho que fue diseñado en la carpeta widgets de market para ser utilizado en mas ventanas
 
-class _CisternasScreenState extends State<CisternasScreen>{
+class _BolsadeAguayHieloScreenState extends State<BolsadeAguayHieloScreen>{
   Drawere _drawere = new Drawere();
   final ListWidgetsShop  _ListWidgetsShop = ListWidgetsShop();
 
@@ -45,11 +47,11 @@ class _CisternasScreenState extends State<CisternasScreen>{
           ),
         ],
         backgroundColor: Colors.green,
-        title: Text('Cisternas'),
+        title: Text('Bolsa de Agua y Hielo'),
         centerTitle: true,
       ),
       body: GridView.builder(
-        itemCount: ListProducts().Cisternas.length,
+        itemCount: ListProducts().BolsadeAguayHielo.length,
         gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
           crossAxisCount: 2,
           crossAxisSpacing: 5,
@@ -77,18 +79,18 @@ class _CisternasScreenState extends State<CisternasScreen>{
 
                         top: Radius.circular(12))),
                       child: _ListWidgetsShop.imageHeader(
-                        image: imagesRoutes().imageCisternas+ListProducts().Cisternas[index]['Image'].toString(),
+                        image: imagesRoutes().imageBolsadeAguayHielo+ListProducts().BolsadeAguayHielo[index]['Image'].toString(),
                         infoaction:(){
                           _ListWidgetsShop.dialogInfoadd(
                             context: context,
-                            image:imagesRoutes().imageCisternas+ListProducts().Cisternas[index]['Image'].toString(),
-                            title: ListProducts().Cisternas[index]['Title'].toString(),
-                            description2: ListProducts().Cisternas[index]['Description2'].toString(),
+                            image:imagesRoutes().imageBolsadeAguayHielo+ListProducts().BolsadeAguayHielo[index]['Image'].toString(),
+                            title: ListProducts().BolsadeAguayHielo[index]['Title'].toString(),
+                            description2: ListProducts().BolsadeAguayHielo[index]['Description2'].toString(),
                             button: _ListWidgetsShop.addCart(action: (){
-                              cart.add(image: 'cisternas/'+ListProducts().Cisternas[index]['Image'].toString(), 
-                              title: ListProducts().Cisternas[index]['Title'].toString(), 
-                              description: ListProducts().Cisternas[index]['Description1'].toString(),
-                              description2: ListProducts().Cisternas[index]['Description2'].toString()
+                              cart.add(image: 'bolsadehielo/'+ListProducts().BolsadeAguayHielo[index]['Image'].toString(), 
+                              title: ListProducts().BolsadeAguayHielo[index]['Title'].toString(), 
+                              description: ListProducts().BolsadeAguayHielo[index]['Description1'].toString(),
+                              description2: ListProducts().BolsadeAguayHielo[index]['Description2'].toString()
                               );
                               }),
                             );
@@ -99,17 +101,17 @@ class _CisternasScreenState extends State<CisternasScreen>{
                 ),
                 Expanded(
                   child:_ListWidgetsShop.productInfo(
-                    title: ListProducts().Cisternas[index]['Title'].toString(),
-                    description: ListProducts().Cisternas[index]['Description1'].toString(),
+                    title: ListProducts().BolsadeAguayHielo[index]['Title'].toString(),
+                    description: ListProducts().BolsadeAguayHielo[index]['Description1'].toString(),
                   ),
                   ),
                   Expanded(
                     child:_ListWidgetsShop.addCart(
                       action: (){
-                        cart.add(image: 'cisterna/'+ListProducts().Cisternas[index]['Image'].toString(), 
-                        title: ListProducts().Cisternas[index]['Title'].toString(), 
-                        description: ListProducts().Cisternas[index]['Description1'].toString(),
-                        description2: ListProducts().Cisternas[index]['Description2'].toString()
+                        cart.add(image: 'bolsadehielo/'+ListProducts().BolsadeAguayHielo[index]['Image'].toString(), 
+                        title: ListProducts().BolsadeAguayHielo[index]['Title'].toString(), 
+                        description: ListProducts().BolsadeAguayHielo[index]['Description1'].toString(),
+                        description2: ListProducts().BolsadeAguayHielo[index]['Description2'].toString()
                         );
                       },
                     ), 

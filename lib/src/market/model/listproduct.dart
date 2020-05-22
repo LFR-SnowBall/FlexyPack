@@ -565,19 +565,19 @@ class ListProducts{
   List<Map<dynamic,dynamic>> Calcomanias =[
     {
 		'Image':'calca-vinil-exhibidor-10-cav.jpg',
-		'Title':'CALCOMANÍA PARA EXHIBIDOR',
+		'Title':'CALCOMANIA PARA EXHIBIDOR',
 		'Description1':'EN VINIL, 5 CAVIDADES',
 		'Description2':"Material: Vinil.\n\n5 Cavidades.\n\nMedida: 18x28 cm."
     },
     {
       'Image':'calca-vinil-exhibidor-10-cav.jpg',
-      'Title':'CALCOMANÍA PARA EXHIBIDOR',
+      'Title':'CALCOMANIA PARA EXHIBIDOR',
       'Description1':'EN VINIL, 10 CAVIDADES',
       'Description2':"Material: Vinil.\n\n10 Cavidades.\n\nMedida: 18x58 cm."
     },
     {
       'Image':'CALCOMANiA-EN VINIL-par-puertas-de-camioneta.jpg',
-      'Title':'CALCOMANÍA PARA CAMIONETA',
+      'Title':'CALCOMANIA PARA CAMIONETA',
       'Description1':'EN VINIL, 2 PUERTAS',
       'Description2':"Material: Vinil.\n\n2 Puertas.\n\nMedida: 50x50 cm."
     }
@@ -680,62 +680,62 @@ class ListProducts{
     {
 		'Image':'PLANTILLA-PAGINA.jpg',
 		'Title':'MÁQUINA SELLADORA MANUAL',
-		'Descriptio1':'',
-		'Descriptio2':""
+		'Description1':'',
+		'Description2':""
     },
     {
       'Image':'sellador-manual-con-muleta.jpg',
       'Title':'SELLADOR MANUAL CON MULETA',
-      'Descriptio1':'',
-      'Descriptio2':""
+      'Description1':'',
+      'Description2':""
     },
     {
       'Image':'TELA-TEFLON.jpg',
       'Title':'TELA TEFLÓN',
-      'Descriptio1':'22X100 CM',
-      'Descriptio2':"Medida: 22X100 cm"
+      'Description1':'22X100 CM',
+      'Description2':"Medida: 22X100 cm"
     },
     {
       'Image':'alambre.jpg',
       'Title':'ALAMBRE CORTE',
-      'Descriptio1':'(No. 24X100 CM)',
-      'Descriptio2':"Medida: No. 24X100 cm"
+      'Description1':'(No. 24X100 CM)',
+      'Description2':"Medida: No. 24X100 cm"
     },
     {
       'Image':'silicon-flexible.jpg',
       'Title':'SILICÓN FLEXIBLE',
-      'Descriptio1':'1 METRO',
-      'Descriptio2':"Medida: 1 Metro.\n\nColor: Blaco."
+      'Description1':'1 METRO',
+      'Description2':"Medida: 1 Metro.\n\nColor: Blaco."
     },
     {
       'Image':'resistencia-35.jpg',
       'Title':'RESISTENCIA',
-      'Descriptio1':'35 CM',
-      'Descriptio2':"Medida: 35 cm."
+      'Description1':'35 CM',
+      'Description2':"Medida: 35 cm."
     },
     {
       'Image':'resistencia-25.jpg',
       'Title':'RESISTENCIA',
-      'Descriptio1':'25 CM',
-      'Descriptio2':"Medida: 25 cm."
+      'Description1':'25 CM',
+      'Description2':"Medida: 25 cm."
     },
     {
       'Image':'vaquelita.jpg',
       'Title':'BAQUELITA',
-      'Descriptio1':'',
-      'Descriptio2':""
+      'Description1':'',
+      'Description2':""
     },
     {
       'Image':'tarjeta.jpg',
       'Title':'TARJETA ELECTRÓNICA',
-      'Descriptio1':'',
-      'Descriptio2':""
+      'Description1':'',
+      'Description2':""
     },
     {
       'Image':'asfalto.jpg',
       'Title':'ASBESTO',
-      'Descriptio1':'(TIRA)',
-      'Descriptio2':"Cantidad: Tira."
+      'Description1':'(TIRA)',
+      'Description2':"Cantidad: Tira."
     }
   ];
   List<Map<dynamic,dynamic>> InsumosVarios =[

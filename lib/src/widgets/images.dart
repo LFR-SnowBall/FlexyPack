@@ -6,10 +6,10 @@ class imagesRoutes{
   String imageBotella = 'assets/images/botellas/';
   String imageSello = 'assets/images/sellos/';
   String imageEtiqueta = 'assets/images/etiquetas/';
-  String imageCalcomania = 'assets/images/calcomanias/';
+  String imageCalcomania = 'assets/images/calcamonias/';
   String imageDivisiondeMetal = 'assets/images/divisiondemetales/';
   String imageBolsadeAguayHielo = 'assets/images/bolsadehielo/';
-  String imageMaquinaParaSellado = 'assets/images/maquinaparasellado/';
+  String imageMaquinaParaSellado = 'assets/images/maquinasparasellado/';
 
 
   String imageInsumosVarios = 'assets/images/insumosvarios/';

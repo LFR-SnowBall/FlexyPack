@@ -1,13 +1,20 @@
 import 'package:flexypack/src/market/ui/screens/Cisternas.dart';
 import 'package:flexypack/src/market/ui/screens/Filtros.dart';
 import 'package:flexypack/src/market/ui/screens/Portafiltro.dart';
+import 'package:flexypack/src/market/ui/screens/bolsadeAguayHielo.dart';
 import 'package:flexypack/src/market/ui/screens/botella.dart';
+import 'package:flexypack/src/market/ui/screens/calcomanias.dart';
+import 'package:flexypack/src/market/ui/screens/divisiondeMetales.dart';
 import 'package:flexypack/src/market/ui/screens/enfriadores.dart';
 import 'package:flexypack/src/market/ui/screens/equiposContraccion.dart';
+import 'package:flexypack/src/market/ui/screens/etiquetas.dart';
 import 'package:flexypack/src/market/ui/screens/insumosQuimicos.dart';
 import 'package:flexypack/src/market/ui/screens/insumosVarios.dart';
 import 'package:flexypack/src/market/ui/screens/insumosVariosMaquinaria.dart';
+import 'package:flexypack/src/market/ui/screens/maquinasdeSellado.dart';
 import 'package:flexypack/src/market/ui/screens/ozonos.dart';
+import 'package:flexypack/src/market/ui/screens/sellos.dart';
+import 'package:flexypack/src/market/ui/screens/tapas.dart';
 import 'package:flutter/material.dart';
 import 'package:flexypack/src/market/ui/screens/home.dart';
 import 'package:flexypack/src/market/ui/screens/garrafon.dart';
@@ -30,8 +37,26 @@ class Router{
       case 'botellas':
         return MaterialPageRoute(builder: (context)=>BotellaScreen());
         break;
-      case 'insumosvarios':
-        return MaterialPageRoute(builder: (context)=>InsumosVariosScreen());
+      case 'tapas':
+        return MaterialPageRoute(builder: (context)=>TapasScreen());
+        break;
+      case 'sellos':
+        return MaterialPageRoute(builder: (context)=>SellosScreen());
+        break;
+      case 'etiquetas':
+        return MaterialPageRoute(builder: (context)=>EtiquetasScreen());
+        break;
+      case 'calcomanias':
+        return MaterialPageRoute(builder: (context)=>CalcomaniasScreen());
+        break;
+      case 'divisiondemetales':
+        return MaterialPageRoute(builder: (context)=>DivisiondeMetalesScreen());
+        break;
+      case 'bolsadeaguayhielo':
+        return MaterialPageRoute(builder: (context)=>BolsadeAguayHieloScreen());
+        break;
+      case 'maquinasdesellado':
+        return MaterialPageRoute(builder: (context)=>MaquinasparaSelladoScreen());
         break;
       case 'insumosquimicos':
         return MaterialPageRoute(builder: (context)=>InsumosQuimicosScreen());

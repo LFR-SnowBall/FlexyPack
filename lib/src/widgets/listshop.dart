@@ -172,5 +172,123 @@ class ListWidgetsShop{
     }
     );
   }
+  Widget dialogmail({Key key,@required BuildContext context,@required Widget button,TextEditingController controllerMail,TextEditingController controllerPhone,TextEditingController controllerName}){
+    showDialog(
+      context: context,
+      builder: (BuildContext context){
+        return AlertDialog(
+          title: Column(
+            children: <Widget>[
+              Text('Cotización',style: TextStyle(
+                fontSize: 15,
+                fontStyle: FontStyle.normal,
+                fontWeight: FontWeight.bold,
+              ),),
+              Container(
+                padding: EdgeInsets.only(top: 5),
+                width: MediaQuery.of(context).size.width,
+                height: MediaQuery.of(context).size.height/14.5,
+                child: TextFormField(
+                  controller: controllerMail,
+                  style: TextStyle(
+                    fontSize: 15,
+                  ),
+                  autofocus: true,
+                  obscureText: false,
+                  decoration: InputDecoration(
+                    icon: Icon(Icons.mail),
+                    border: OutlineInputBorder(),
+                    labelText: 'Correo @',
+                    helperText: "Example@mail.com",
+                  ),
+                  textInputAction: TextInputAction.next,
+                  maxLength: 86,
+                ),
+              ),
+              Container(
+                padding: EdgeInsets.only(top: 5),
+                width: MediaQuery.of(context).size.width,
+                height: MediaQuery.of(context).size.height/14.5,
+                child: TextFormField(
+                  controller: controllerPhone,
+                  style: TextStyle(
+                    fontSize: 15,
+                  ),
+                  autofocus: true,
+                  obscureText: false,
+                  decoration: InputDecoration(
+                    icon: Icon(Icons.call),
+                    border: OutlineInputBorder(),
+                    labelText: 'Telefono',
+                    helperText: "Example 4433000689",
+                  ),
+                  textInputAction: TextInputAction.next,
+                  keyboardType: TextInputType.phone,
+                  maxLength: 14,
+                ),
+              ),
+              Container(
+                padding: EdgeInsets.only(top: 5),
+                width: MediaQuery.of(context).size.width,
+                height: MediaQuery.of(context).size.height/14.5,
+                child: TextFormField(
+                  controller: controllerName,
+                  style: TextStyle(
+                    fontSize: 15,
+                  ),
+                  autofocus: true,
+                  obscureText: false,
+                  decoration: InputDecoration(
+                    icon: Icon(Icons.person),
+                    border: OutlineInputBorder(),
+                    labelText: 'Nombre Completo',
+                    helperText: "Nombres Apellidos",
+                  ),
+                  textInputAction: TextInputAction.send,
+                  maxLength: 45,
+                ),
+              ),
+            ],
+          ),
+           backgroundColor: Color.fromRGBO(250, 250, 250, 6), //blanco HEX #FAFAFA,
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.vertical(bottom: Radius.circular(12),top: Radius.circular(12))
+        ),
+          content: button,
+        );
+      }
+    );
+  }
+  
+  Widget sendmail({Key key,@required Function action}){
+     return ListTile(
+      contentPadding: EdgeInsets.all(0),
+      dense: false,
+      title: Padding(
+        padding: EdgeInsets.symmetric(vertical: 0.0),
+        child: Card(
+          margin: EdgeInsets.all(0),
+          clipBehavior: Clip.antiAlias,
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.vertical(bottom: Radius.circular(12), top: Radius.circular(10),),
+          ),
+          child: FlatButton.icon(
+          padding: EdgeInsets.symmetric(vertical: 13),
+            color: Colors.green,
+            disabledColor: Colors.green,
+            disabledTextColor: Colors.black,
+            onPressed:action, 
+            icon: Icon(Icons.send), 
+            label: Text("solicitar Cotización", 
+              maxLines: 2,
+              overflow: TextOverflow.visible,
+              style: TextStyle(
+              ),),
+            ),
+        ),
+        ),
+    );
+
+  }
 
 }

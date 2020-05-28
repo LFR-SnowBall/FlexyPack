@@ -2,7 +2,9 @@ import 'package:flexypack/src/market/model/addcart.dart';
 import 'package:flexypack/src/widgets/images.dart';
 import 'package:flexypack/src/widgets/listshop.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_email_sender/flutter_email_sender.dart';
 import 'package:provider/provider.dart';
+import 'package:fluttertoast/fluttertoast.dart';
 
 class ShoppingCart extends StatefulWidget{
   @override
@@ -18,6 +20,10 @@ class ShoppingCart extends StatefulWidget{
 
 class _ShoppingCartState extends State<ShoppingCart>{
   final ListWidgetsShop  _ListWidgetsShop = ListWidgetsShop();
+  final mailField = TextEditingController();
+  final phoneField = TextEditingController();
+  final nameField = TextEditingController();
+  String products='';
   
   Widget build(BuildContext context) {
   final _media = MediaQuery.of(context).size;
@@ -49,9 +55,9 @@ class _ShoppingCartState extends State<ShoppingCart>{
                     Text('Agrega Productos al acarrito')
                   ],
                 ),
-              )
+              ),
             ],
-          )
+          ),
         ),
         )
         : GridView.builder(
@@ -63,6 +69,7 @@ class _ShoppingCartState extends State<ShoppingCart>{
           childAspectRatio: 0.70,
           ), 
         itemBuilder: (contex,index){
+          products +="Producto:<br>${cart.cartProducts[index]['Title'].toString()}<br>Descripción:<br>${cart.cartProducts[index]['Description1'].toString()}<br>Detalles:<br>${cart.cartProducts[index]['Description2'].toString()}<br><br>";
           return Container(
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(15.0),),
@@ -85,7 +92,6 @@ class _ShoppingCartState extends State<ShoppingCart>{
                         top: Radius.circular(12))),
                       child: _ListWidgetsShop.imageHeader(
                         image: imagesRoutes().cartroute+cart.cartProducts[index]['Image'].toString()
-                        //imagesRoutes().cartroute+_ListProducts.Cart[index]['Image'].toString(),
                       ),
                 ),
                 ],
@@ -109,6 +115,35 @@ class _ShoppingCartState extends State<ShoppingCart>{
           );
         },
         ),
+        floatingActionButton: cart.cartProducts.length==0
+        ?FloatingActionButton.extended(onPressed: (){
+         Fluttertoast.showToast(
+           msg: 'Carrito Vacío',
+           toastLength: Toast.LENGTH_LONG,
+           gravity: ToastGravity.CENTER,
+           timeInSecForIosWeb: 0,
+           backgroundColor: Color(0xffD8000000),
+           textColor: Colors.white,
+           fontSize: 15,
+         );
+        }, label: Text('Cotizar'),icon: Icon(Icons.mail_outline),backgroundColor: Colors.grey,)
+        :FloatingActionButton.extended(onPressed: (){
+            _ListWidgetsShop.dialogmail(
+            context: context,
+            controllerMail: mailField,
+            controllerName: nameField,
+            controllerPhone: phoneField,
+            button: _ListWidgetsShop.sendmail(action: (){
+                final Email email =Email(
+                body: "Nombre: ${nameField.text}<br>Correo: ${mailField.text}<br>Telefono: ${phoneField.text}<br><br>Productos:<br><br>${products.toString()}",
+                subject: "Solicitud de cotización de productos Flexy Pack",
+                recipients: ['jg17021@gmail.com'],
+                isHTML: true,
+              );
+              FlutterEmailSender.send(email);
+            })
+          );
+        }, label: Text('Cotizar'),icon: Icon(Icons.mail_outline),backgroundColor: Colors.green,),
       );
       },
     );

@@ -1008,7 +1008,7 @@ class ListProducts{
 		'Description2':'Para Dureza\n\nQuímico',
 	},
 	{
-		'Image':'hitTest2.jpg',
+		'Image':'kitTest2.jpg',
 		'Title':'KIT TEST DUREZA 6 Y 7',
 		'Description1':'Económico\nQuímico',
 		'Description2':'Económico\n\nQuímico',
@@ -1180,7 +1180,7 @@ List<Map<dynamic,dynamic>> InsumosVariosMaquinaria =[
 		'Description2':'Portamenbrana\n\nDe 4 pulgadas',
 	},
 	{
-		'Image':'grava.jpg',
+		'Image':'GRAVA.jpg',
 		'Title':'GRAVA',
 		'Description1':'Grava',
 		'Description2':'Grava',

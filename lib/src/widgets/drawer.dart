@@ -43,7 +43,7 @@ class Drawere{
               tiles: [
                 _listTile(
                   texto: 'Garrafón',
-                  ontap: () => Navigator.pushReplacementNamed(context, 'garrafón')
+                  ontap: () => Navigator.pushReplacementNamed(context, 'garrafon')
                 ),
                 _listTile(
                   texto: 'Tapas',

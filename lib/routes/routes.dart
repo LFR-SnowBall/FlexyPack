@@ -58,6 +58,8 @@ class Router{
       case 'maquinasdesellado':
         return MaterialPageRoute(builder: (context)=>MaquinasparaSelladoScreen());
         break;
+      case 'insumosvarios':
+        return MaterialPageRoute(builder: (context)=>InsumosVariosScreen());
       case 'insumosquimicos':
         return MaterialPageRoute(builder: (context)=>InsumosQuimicosScreen());
         break;

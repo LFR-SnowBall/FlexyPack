@@ -69,7 +69,6 @@ class _ShoppingCartState extends State<ShoppingCart>{
           childAspectRatio: 0.70,
           ), 
         itemBuilder: (contex,index){
-          products +="Producto:<br>${cart.cartProducts[index]['Title'].toString()}<br>Descripción:<br>${cart.cartProducts[index]['Description1'].toString()}<br>Detalles:<br>${cart.cartProducts[index]['Description2'].toString()}<br><br>";
           return Container(
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(15.0),),
@@ -128,12 +127,16 @@ class _ShoppingCartState extends State<ShoppingCart>{
          );
         }, label: Text('Cotizar'),icon: Icon(Icons.mail_outline),backgroundColor: Colors.grey,)
         :FloatingActionButton.extended(onPressed: (){
+          products='';
             _ListWidgetsShop.dialogmail(
             context: context,
             controllerMail: mailField,
             controllerName: nameField,
             controllerPhone: phoneField,
             button: _ListWidgetsShop.sendmail(action: (){
+              for(int i=0; i<cart.cartProducts.length; i++){
+                products +="Producto:<br>${cart.cartProducts[i]['Title'].toString()}<br>Descripción:<br>${cart.cartProducts[i]['Description1'].toString()}<br>Detalles:<br>${cart.cartProducts[i]['Description2'].toString()}<br><br>";
+              }
                 final Email email =Email(
                 body: "Nombre: ${nameField.text}<br>Correo: ${mailField.text}<br>Telefono: ${phoneField.text}<br><br>Productos:<br><br>${products.toString()}",
                 subject: "Solicitud de cotización de productos Flexy Pack",

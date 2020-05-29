@@ -40,7 +40,7 @@ class _ShoppingCartState extends State<ShoppingCart>{
         body: cart.cartProducts.length==0
         ?Center(
           child: Container(
-            padding: EdgeInsets.only(bottom: _media.width/1.2, top: _media.width/1.2),
+            padding: EdgeInsets.only(bottom: _media.width/1.5, top: _media.width/1.5),
           alignment: Alignment(0.0,0.0),
           child: Column(
             children: <Widget>[

@@ -139,6 +139,7 @@ class _ShoppingCartState extends State<ShoppingCart>{
               p=phoneField.text;
               n=nameField.text;
               if(m!=""&&p!=""&&n!=""){
+                products ='';
                 for(int i=0; i<cart.cartProducts.length; i++){
                   products +="Producto:<br>${cart.cartProducts[i]['Title'].toString()}<br>Descripción:<br>${cart.cartProducts[i]['Description1'].toString()}<br>Detalles:<br>${cart.cartProducts[i]['Description2'].toString()}<br><br>";
                   }

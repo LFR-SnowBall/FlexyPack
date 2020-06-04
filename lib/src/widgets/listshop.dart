@@ -219,7 +219,7 @@ class ListWidgetsShop{
                   decoration: InputDecoration(
                     icon: Icon(Icons.call),
                     border: OutlineInputBorder(),
-                    labelText: 'Telefono',
+                    labelText: 'Teléfono',
                     helperText: "Example 4433000689",
                   ),
                   textInputAction: TextInputAction.next,
@@ -241,7 +241,7 @@ class ListWidgetsShop{
                   decoration: InputDecoration(
                     icon: Icon(Icons.person),
                     border: OutlineInputBorder(),
-                    labelText: 'Nombre Completo',
+                    labelText: 'Nombre completo',
                     helperText: "Nombres Apellidos",
                   ),
                   textInputAction: TextInputAction.send,
@@ -279,7 +279,7 @@ class ListWidgetsShop{
             disabledTextColor: Colors.black,
             onPressed:action, 
             icon: Icon(Icons.send), 
-            label: Text("solicitar Cotización", 
+            label: Text("Solicitar Cotización", 
               maxLines: 2,
               overflow: TextOverflow.visible,
               style: TextStyle(

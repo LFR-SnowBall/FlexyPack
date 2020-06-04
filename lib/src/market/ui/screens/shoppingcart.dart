@@ -24,6 +24,7 @@ class _ShoppingCartState extends State<ShoppingCart>{
   final phoneField = TextEditingController();
   final nameField = TextEditingController();
   String products='';
+  String m,p,n;
   
   Widget build(BuildContext context) {
   final _media = MediaQuery.of(context).size;
@@ -52,7 +53,7 @@ class _ShoppingCartState extends State<ShoppingCart>{
                 child: Row(
                   children: <Widget>[
                     Icon(Icons.add_shopping_cart),
-                    Text('Agrega Productos al acarrito')
+                    Text('Agrege productos al acarrito')
                   ],
                 ),
               ),
@@ -134,16 +135,32 @@ class _ShoppingCartState extends State<ShoppingCart>{
             controllerName: nameField,
             controllerPhone: phoneField,
             button: _ListWidgetsShop.sendmail(action: (){
-              for(int i=0; i<cart.cartProducts.length; i++){
-                products +="Producto:<br>${cart.cartProducts[i]['Title'].toString()}<br>Descripción:<br>${cart.cartProducts[i]['Description1'].toString()}<br>Detalles:<br>${cart.cartProducts[i]['Description2'].toString()}<br><br>";
+              m=mailField.text;
+              p=phoneField.text;
+              n=nameField.text;
+              if(m!=""&&p!=""&&n!=""){
+                for(int i=0; i<cart.cartProducts.length; i++){
+                  products +="Producto:<br>${cart.cartProducts[i]['Title'].toString()}<br>Descripción:<br>${cart.cartProducts[i]['Description1'].toString()}<br>Detalles:<br>${cart.cartProducts[i]['Description2'].toString()}<br><br>";
+                  }
+                  final Email email =Email(
+                    body: "Nombre: ${nameField.text}<br>Correo: ${mailField.text}<br>Telefono: ${phoneField.text}<br><br>Productos:<br><br>${products.toString()}",
+                    subject: "Solicitud de cotización de productos Flexy Pack",
+                    recipients: ['ventas1cfp@hotmail.com'],
+                    isHTML: true,
+                    );
+                    FlutterEmailSender.send(email);
               }
-                final Email email =Email(
-                body: "Nombre: ${nameField.text}<br>Correo: ${mailField.text}<br>Telefono: ${phoneField.text}<br><br>Productos:<br><br>${products.toString()}",
-                subject: "Solicitud de cotización de productos Flexy Pack",
-                recipients: ['jg17021@gmail.com'],
-                isHTML: true,
-              );
-              FlutterEmailSender.send(email);
+              else{
+                Fluttertoast.showToast(
+                  msg: 'Favor de llenar todos los campos',
+                  toastLength: Toast.LENGTH_LONG,
+                  gravity: ToastGravity.CENTER,
+                  timeInSecForIosWeb: 0,
+                  backgroundColor: Color(0xffD8FF2525),
+                  textColor: Colors.white,
+                  fontSize: 15,
+                  );
+              }
             })
           );
         }, label: Text('Cotizar'),icon: Icon(Icons.mail_outline),backgroundColor: Colors.green,),

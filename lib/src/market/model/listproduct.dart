@@ -875,13 +875,13 @@ class ListProducts{
 		'Image':'sal1.jpg',
 		'Title':'SAL AMERICANA',
 		'Description1':'Marca Aquatrol',
-		'Description2':'Marca Aquatrol\n\nPeso: 1Kg\n\nTipo: Americana',
+		'Description2':'Marca Aquatrol\n\nTipo: Americana',
 	},
 	{
 		'Image':'sal2.jpg',
 		'Title':'SAL INDUSTRIAL',
 		'Description1':'Marca Roche Roja',
-		'Description2':'Marca Roche Roja\n\nPeso: 1Kg\n\nTipo: Industrial',
+		'Description2':'Marca Roche Roja\n\nTipo: Industrial',
 	},
 	{
 		'Image':'tapon.jpg',

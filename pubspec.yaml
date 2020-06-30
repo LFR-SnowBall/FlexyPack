@@ -19,14 +19,21 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  fluttertoast: ^4.0.1
+  flutter_email_sender: ^3.0.1
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^0.1.2
 
+  flip_card: ^0.4.4
+
+  provider: ^4.0.4
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  
 
 
 # For information on the generic Dart part of this file, see the
@@ -34,6 +41,50 @@ dev_dependencies:
 
 # The following section is specific to Flutter.
 flutter:
+
+  # declaración de Logo
+  assets:
+    #rutas de imagenes
+    - assets/images/logo/logo.png
+    #1 Garrafon
+    - assets/images/garrafon/pet/
+    - assets/images/garrafon/pvc/
+    #2 Botellas
+    - assets/images/botellas/
+    #3 Tapas
+    - assets/images/tapas/
+    #4 sellos
+    - assets/images/sellos/
+    #5 porta filtro
+    - assets/images/portafiltro/
+    #6 ozonos
+    - assets/images/ozonos/
+    #7 maquinas para sellado
+    - assets/images/maquinasparasellado/
+    #8 insumos varios maquinaria
+    - assets/images/insumosvariosmaquinaria/
+    #9 insumos varios
+    - assets/images/insumosvarios/
+    #10 insumos quimicos
+    - assets/images/insumosquimicos/
+    #11 filtros
+    - assets/images/filtros/
+    #12 etiquetas
+    - assets/images/etiquetas/
+    #13 equipos de contraccion
+    - assets/images/equiposdecontraccion/
+    #14 enfriadores
+    - assets/images/enfriadores/
+    #15 division de metales
+    - assets/images/divisiondemetales/
+    #16 cisterna
+    - assets/images/cisterna/
+    #17 calcomanias
+    - assets/images/calcamonias/
+    #18 bolsa de hielo
+    - assets/images/bolsadehielo/  
+
+
 
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in

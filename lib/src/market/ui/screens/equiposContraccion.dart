@@ -1,0 +1,129 @@
+import 'dart:convert';
+import 'package:flip_card/flip_card.dart';
+import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
+import 'package:flexypack/src/widgets/drawer.dart';
+import 'package:flexypack/src/market/model/listproduct.dart';
+import 'package:flexypack/src/widgets/listshop.dart';
+import 'package:flexypack/src/widgets/images.dart';
+import 'package:flexypack/src/market/model/addcart.dart';
+import 'package:provider/provider.dart';
+
+
+class EquiposContraccionScreen extends StatefulWidget{
+  @override
+  State<StatefulWidget> createState() => _EquiposContraccionScreenState();
+    // TODO: implement createState
+}
+
+
+class _EquiposContraccionScreenState extends State<EquiposContraccionScreen>{
+  Drawere _drawere = new Drawere();
+  final ListWidgetsShop  _ListWidgetsShop = ListWidgetsShop();
+
+  @override
+  Widget build(BuildContext context) {
+    final _media = MediaQuery.of(context).size;
+    // TODO: implement build
+    return Consumer<Cart>(builder: (context, cart,child){
+      return Scaffold(
+      backgroundColor: Color.fromRGBO(250, 250, 250, 6), //blanco HEX #FAFAFA
+      drawer: _drawere.drawer(context),
+      appBar: AppBar(
+        actions: <Widget>[
+          Padding(
+            padding: EdgeInsets.all(8.0),
+            child: Row(
+              children: <Widget>[
+                IconButton(
+                  icon: Icon(Icons.shopping_cart), 
+                  onPressed: () => Navigator.pushNamed(context, 'cartshopping')
+                  ),
+                  Text(cart.addcount.toString(),style: TextStyle(fontSize: 20,fontWeight:FontWeight.bold),),
+              ],
+            ),
+          ),
+        ],
+        backgroundColor: Colors.green,
+        title: Text('Equipos de Contracción'),
+        centerTitle: true,
+      ),
+      body: GridView.builder(
+        itemCount: ListProducts().EquipoContruccion.length,
+        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+          crossAxisCount: 2,
+          crossAxisSpacing: 5,
+          mainAxisSpacing: 5,
+          childAspectRatio: 0.70,
+          ), 
+        itemBuilder: (context,index){
+          return Container(
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(15.0),),
+              child: Card(
+                 shape: RoundedRectangleBorder(
+                   borderRadius: BorderRadius.vertical(top: Radius.circular(12),bottom: Radius.circular(12)),
+                   ),
+                child: Column(
+                  children: <Widget>[
+                    Stack(
+                  children: <Widget>[
+                    Container(
+                      width: _media.width,
+                      height: _media.height*0.17,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.vertical(
+                          bottom: Radius.circular(12),
+
+                        top: Radius.circular(12))),
+                      child: _ListWidgetsShop.imageHeader(
+                        image: imagesRoutes().imageEquipoContraccion+ListProducts().EquipoContruccion[index]['Image'].toString(),
+                        infoaction:(){
+                          _ListWidgetsShop.dialogInfoadd(
+                            context: context,
+                            image:imagesRoutes().imageEquipoContraccion+ListProducts().EquipoContruccion[index]['Image'].toString(),
+                            title: ListProducts().EquipoContruccion[index]['Title'].toString(),
+                            description2: ListProducts().EquipoContruccion[index]['Description2'].toString(),
+                            button: _ListWidgetsShop.addCart(action: (){
+                              cart.add(image: 'equipoContraccion/'+ListProducts().EquipoContruccion[index]['Image'].toString(), 
+                              title: ListProducts().EquipoContruccion[index]['Title'].toString(), 
+                              description: ListProducts().EquipoContruccion[index]['Description1'].toString(),
+                              description2: ListProducts().EquipoContruccion[index]['Description2'].toString()
+                              );
+                              }),
+                            );
+                        }
+                      ),
+                ),
+                ],
+                ),
+                Expanded(
+                  child:_ListWidgetsShop.productInfo(
+                    title: ListProducts().EquipoContruccion[index]['Title'].toString(),
+                    description: ListProducts().EquipoContruccion[index]['Description1'].toString(),
+                  ),
+                  ),
+                  Expanded(
+                    child:_ListWidgetsShop.addCart(
+                      action: (){
+                        cart.add(image: 'equipoContraccion/'+ListProducts().EquipoContruccion[index]['Image'].toString(), 
+                        title: ListProducts().EquipoContruccion[index]['Title'].toString(), 
+                        description: ListProducts().EquipoContruccion[index]['Description1'].toString(),
+                        description2: ListProducts().EquipoContruccion[index]['Description2'].toString()
+                        );
+                      },
+                    ), 
+                    ),
+                  ],
+                ),
+              ),
+          );
+          
+        },
+        ),
+    );
+ 
+    });
+
+    }
+}

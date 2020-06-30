@@ -19,7 +19,7 @@ class _HomeScreenState extends State<HomeScreen>{
   Widget build(BuildContext context) {
     // TODO: implement build
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: Color.fromRGBO(250, 250, 250, 6), //blanco HEX #FAFAFA
       drawer: _drawere.drawer(context),
       appBar: AppBar(
         backgroundColor: Colors.green,

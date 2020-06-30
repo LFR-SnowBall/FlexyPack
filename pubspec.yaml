@@ -19,6 +19,8 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  fluttertoast: ^4.0.1
+  flutter_email_sender: ^3.0.1
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
@@ -44,23 +46,45 @@ flutter:
   assets:
     #rutas de imagenes
     - assets/images/logo/logo.png
-    #Garrafon pet
-    - assets/images/garrafon/pet/g11lts.jpg
-    - assets/images/garrafon/pet/g19lts.jpg
-    - assets/images/garrafon/pet/g19lt.jpg
-    - assets/images/garrafon/pet/g20lts.jpg
-    - assets/images/garrafon/pet/gclasic.jpg
-    #Garrafon pvc
-    - assets/images/garrafon/pvc/g1lts.jpg
-    - assets/images/garrafon/pvc/g2lts.jpg
-    - assets/images/garrafon/pvc/g11lts.jpg
-    - assets/images/garrafon/pvc/g19lts.jpg
-    - assets/images/garrafon/pvc/g20lts.jpg
-    #Porta Garrafon
-    - assets/images/garrafon/portagarrafon/b11lts.jpg
-    - assets/images/garrafon/portagarrafon/pg1.jpg
-    - assets/images/garrafon/portagarrafon/pg2.jpg
-    - assets/images/garrafon/portagarrafon/pg3.jpg
+    #1 Garrafon
+    - assets/images/garrafon/pet/
+    - assets/images/garrafon/pvc/
+    #2 Botellas
+    - assets/images/botellas/
+    #3 Tapas
+    - assets/images/tapas/
+    #4 sellos
+    - assets/images/sellos/
+    #5 porta filtro
+    - assets/images/portafiltro/
+    #6 ozonos
+    - assets/images/ozonos/
+    #7 maquinas para sellado
+    - assets/images/maquinasparasellado/
+    #8 insumos varios maquinaria
+    - assets/images/insumosvariosmaquinaria/
+    #9 insumos varios
+    - assets/images/insumosvarios/
+    #10 insumos quimicos
+    - assets/images/insumosquimicos/
+    #11 filtros
+    - assets/images/filtros/
+    #12 etiquetas
+    - assets/images/etiquetas/
+    #13 equipos de contraccion
+    - assets/images/equiposdecontraccion/
+    #14 enfriadores
+    - assets/images/enfriadores/
+    #15 division de metales
+    - assets/images/divisiondemetales/
+    #16 cisterna
+    - assets/images/cisterna/
+    #17 calcomanias
+    - assets/images/calcamonias/
+    #18 bolsa de hielo
+    - assets/images/bolsadehielo/  
+
+
 
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in

@@ -15,6 +15,7 @@ class Drawere{
             leading: Container(
               child: Image.asset(imagesRoutes().logo+'logo.png'),
             ),
+            subtitle: Text('2020'),
           ),
           Divider(
             color: Colors.green,
@@ -24,7 +25,7 @@ class Drawere{
            child:  Container(
              alignment:Alignment.centerLeft,
              margin: EdgeInsets.only(left:15),
-             child: Text('CATEGORIES',style: TextStyle(
+             child: Text('CATEGORIAS',style: TextStyle(
              color: Colors.white,
             fontWeight: FontWeight.bold,
             fontSize: 18,
@@ -74,7 +75,7 @@ class Drawere{
                 ),
                 _listTile(
                   texto: 'Maquinas para sellado',
-                  ontap: () => Navigator.pushReplacementNamed(context, 'maquinasparasellado')
+                  ontap: () => Navigator.pushReplacementNamed(context, 'maquinasdesellado')
                 ),
                 _listTile(
                   texto: 'Insumos varios',

@@ -2,7 +2,9 @@ import 'package:flexypack/src/market/model/addcart.dart';
 import 'package:flexypack/src/widgets/images.dart';
 import 'package:flexypack/src/widgets/listshop.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_email_sender/flutter_email_sender.dart';
 import 'package:provider/provider.dart';
+import 'package:fluttertoast/fluttertoast.dart';
 
 class ShoppingCart extends StatefulWidget{
   @override
@@ -18,6 +20,11 @@ class ShoppingCart extends StatefulWidget{
 
 class _ShoppingCartState extends State<ShoppingCart>{
   final ListWidgetsShop  _ListWidgetsShop = ListWidgetsShop();
+  final mailField = TextEditingController();
+  final phoneField = TextEditingController();
+  final nameField = TextEditingController();
+  String products='';
+  String m,p,n;
   
   Widget build(BuildContext context) {
   final _media = MediaQuery.of(context).size;
@@ -25,7 +32,7 @@ class _ShoppingCartState extends State<ShoppingCart>{
     return Consumer<Cart>(
       builder: (context,cart,child){
         return Scaffold(
-        backgroundColor: Colors.white,
+        backgroundColor: Color.fromRGBO(250, 250, 250, 6), //blanco HEX #FAFAFA
         appBar: AppBar(
           backgroundColor: Colors.green,
           title: Icon(Icons.shopping_cart),
@@ -34,7 +41,7 @@ class _ShoppingCartState extends State<ShoppingCart>{
         body: cart.cartProducts.length==0
         ?Center(
           child: Container(
-            padding: EdgeInsets.only(bottom: _media.width/1.2, top: _media.width/1.2),
+            padding: EdgeInsets.only(bottom: _media.width/1.5, top: _media.width/1.5),
           alignment: Alignment(0.0,0.0),
           child: Column(
             children: <Widget>[
@@ -46,12 +53,12 @@ class _ShoppingCartState extends State<ShoppingCart>{
                 child: Row(
                   children: <Widget>[
                     Icon(Icons.add_shopping_cart),
-                    Text('Agrega Productos al acarrito')
+                    Text('Agrege productos al acarrito')
                   ],
                 ),
-              )
+              ),
             ],
-          )
+          ),
         ),
         )
         : GridView.builder(
@@ -65,9 +72,11 @@ class _ShoppingCartState extends State<ShoppingCart>{
         itemBuilder: (contex,index){
           return Container(
             decoration: BoxDecoration(
-              color: Colors.black12,
               borderRadius: BorderRadius.circular(15.0),),
               child: Card(
+                shape: RoundedRectangleBorder(
+                   borderRadius: BorderRadius.vertical(top: Radius.circular(12),bottom: Radius.circular(12)),
+                   ),
                 child: Column(
                   children: <Widget>[
                     Stack(
@@ -83,7 +92,6 @@ class _ShoppingCartState extends State<ShoppingCart>{
                         top: Radius.circular(12))),
                       child: _ListWidgetsShop.imageHeader(
                         image: imagesRoutes().cartroute+cart.cartProducts[index]['Image'].toString()
-                        //imagesRoutes().cartroute+_ListProducts.Cart[index]['Image'].toString(),
                       ),
                 ),
                 ],
@@ -91,7 +99,7 @@ class _ShoppingCartState extends State<ShoppingCart>{
                 Expanded(
                   child:_ListWidgetsShop.productInfo(
                     title: cart.cartProducts[index]['Title'].toString(),
-                    description: cart.cartProducts[index]['Description'].toString(),
+                    description: cart.cartProducts[index]['Description1'].toString(),
                   ),
                   ),
                   Expanded(
@@ -107,6 +115,56 @@ class _ShoppingCartState extends State<ShoppingCart>{
           );
         },
         ),
+        floatingActionButton: cart.cartProducts.length==0
+        ?FloatingActionButton.extended(onPressed: (){
+         Fluttertoast.showToast(
+           msg: 'Carrito Vacío',
+           toastLength: Toast.LENGTH_LONG,
+           gravity: ToastGravity.CENTER,
+           timeInSecForIosWeb: 0,
+           backgroundColor: Color(0xffD8000000),
+           textColor: Colors.white,
+           fontSize: 15,
+         );
+        }, label: Text('Cotizar'),icon: Icon(Icons.mail_outline),backgroundColor: Colors.grey,)
+        :FloatingActionButton.extended(onPressed: (){
+          products='';
+            _ListWidgetsShop.dialogmail(
+            context: context,
+            controllerMail: mailField,
+            controllerName: nameField,
+            controllerPhone: phoneField,
+            button: _ListWidgetsShop.sendmail(action: (){
+              m=mailField.text;
+              p=phoneField.text;
+              n=nameField.text;
+              if(m!=""&&p!=""&&n!=""){
+                products ='';
+                for(int i=0; i<cart.cartProducts.length; i++){
+                  products +="Producto:<br>${cart.cartProducts[i]['Title'].toString()}<br>Descripción:<br>${cart.cartProducts[i]['Description1'].toString()}<br>Detalles:<br>${cart.cartProducts[i]['Description2'].toString()}<br><br>";
+                  }
+                  final Email email =Email(
+                    body: "Nombre: ${nameField.text}<br>Correo: ${mailField.text}<br>Telefono: ${phoneField.text}<br><br>Productos:<br><br>${products.toString()}",
+                    subject: "Solicitud de cotización de productos Flexy Pack",
+                    recipients: ['ventas1cfp@hotmail.com'],
+                    isHTML: true,
+                    );
+                    FlutterEmailSender.send(email);
+              }
+              else{
+                Fluttertoast.showToast(
+                  msg: 'Favor de llenar todos los campos',
+                  toastLength: Toast.LENGTH_LONG,
+                  gravity: ToastGravity.CENTER,
+                  timeInSecForIosWeb: 0,
+                  backgroundColor: Color(0xffD8FF2525),
+                  textColor: Colors.white,
+                  fontSize: 15,
+                  );
+              }
+            })
+          );
+        }, label: Text('Cotizar'),icon: Icon(Icons.mail_outline),backgroundColor: Colors.green,),
       );
       },
     );

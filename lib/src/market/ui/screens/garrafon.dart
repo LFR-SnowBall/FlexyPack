@@ -1,5 +1,6 @@
 import 'dart:convert';
 import 'package:flip_card/flip_card.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flexypack/src/widgets/drawer.dart';
 import 'package:flexypack/src/market/model/listproduct.dart';
@@ -28,7 +29,7 @@ class _GarrafonScreenState extends State<GarrafonScreen>{
     // TODO: implement build
     return Consumer<Cart>(builder: (context, cart,child){
       return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: Color.fromRGBO(250, 250, 250, 6), //blanco HEX #FAFAFA
       drawer: _drawere.drawer(context),
       appBar: AppBar(
         actions: <Widget>[
@@ -60,9 +61,11 @@ class _GarrafonScreenState extends State<GarrafonScreen>{
         itemBuilder: (context,index){
           return Container(
             decoration: BoxDecoration(
-              color: Colors.black12,
               borderRadius: BorderRadius.circular(15.0),),
               child: Card(
+                 shape: RoundedRectangleBorder(
+                   borderRadius: BorderRadius.vertical(top: Radius.circular(12),bottom: Radius.circular(12)),
+                   ),
                 child: Column(
                   children: <Widget>[
                     Stack(
@@ -71,13 +74,27 @@ class _GarrafonScreenState extends State<GarrafonScreen>{
                       width: _media.width,
                       height: _media.height*0.17,
                       decoration: BoxDecoration(
-                        color: Colors.grey,
                         borderRadius: BorderRadius.vertical(
                           bottom: Radius.circular(12),
 
                         top: Radius.circular(12))),
                       child: _ListWidgetsShop.imageHeader(
                         image: imagesRoutes().imageGarrafon+ListProducts().Garrafon[index]['Image'].toString(),
+                        infoaction:(){
+                          _ListWidgetsShop.dialogInfoadd(
+                            context: context,
+                            image:imagesRoutes().imageGarrafon+ListProducts().Garrafon[index]['Image'].toString(),
+                            title: ListProducts().Garrafon[index]['Title'].toString(),
+                            description2: ListProducts().Garrafon[index]['Description2'].toString(),
+                            button: _ListWidgetsShop.addCart(action: (){
+                              cart.add(image: 'garrafon/'+ListProducts().Garrafon[index]['Image'].toString(), 
+                              title: ListProducts().Garrafon[index]['Title'].toString(), 
+                              description: ListProducts().Garrafon[index]['Description1'].toString(),
+                              description2: ListProducts().Garrafon[index]['Description2'].toString()
+                              );
+                              }),
+                            );
+                        }
                       ),
                 ),
                 ],
@@ -85,7 +102,7 @@ class _GarrafonScreenState extends State<GarrafonScreen>{
                 Expanded(
                   child:_ListWidgetsShop.productInfo(
                     title: ListProducts().Garrafon[index]['Title'].toString(),
-                    description: ListProducts().Garrafon[index]['Description'].toString(),
+                    description: ListProducts().Garrafon[index]['Description1'].toString(),
                   ),
                   ),
                   Expanded(
@@ -93,7 +110,9 @@ class _GarrafonScreenState extends State<GarrafonScreen>{
                       action: (){
                         cart.add(image: 'garrafon/'+ListProducts().Garrafon[index]['Image'].toString(), 
                         title: ListProducts().Garrafon[index]['Title'].toString(), 
-                        description: ListProducts().Garrafon[index]['Description'].toString(),);
+                        description: ListProducts().Garrafon[index]['Description1'].toString(),
+                        description2: ListProducts().Garrafon[index]['Description2'].toString()
+                        );
                       },
                     ), 
                     ),
@@ -105,8 +124,8 @@ class _GarrafonScreenState extends State<GarrafonScreen>{
         },
         ),
     );
-
+ 
     });
 
     }
-  }
+}

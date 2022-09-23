@@ -1,6 +1,6 @@
 # flexypack
 
-A new Flutter application.
+App Flutter application Demo.
 
 ## Getting Started
 
